@@ -12,7 +12,7 @@ import java.net.URL;
 public class Capabilities extends CommonUtils {
     AppiumDriver driver=null;
 
-    public AppiumDriver launchApp(String platform) throws Throwable {
+    public AppiumDriver launchDriver(String platform) throws Throwable {
         DesiredCapabilities capabilities = getCapabilities(platform);
 
         try {
@@ -37,17 +37,18 @@ public class Capabilities extends CommonUtils {
         capabilities.setCapability("appium:appWaitForLaunch", true);
 
         if ("Android".equalsIgnoreCase(platform)) {
-            capabilities.setCapability("deviceName", "RZ8T31C2GFH");
-            capabilities.setCapability("platformVersion", "14");
+            capabilities.setCapability("deviceName", "emulator-5554");
+            capabilities.setCapability("platformVersion", "13");
             capabilities.setCapability("appium:automationName", "uiautomator2");
             capabilities.setCapability("appium:platformName", "Android");
             capabilities.setCapability("appium:appPackage", "com.adaptavant.setmore");
             capabilities.setCapability("appium:appActivity", "com.anywhere.container.presentation.ui.MainActivity");
         } else if ("iOS".equalsIgnoreCase(platform)) {
-            capabilities.setCapability("deviceName", "iPhone 12 Pro Max");
-            capabilities.setCapability("platformVersion", "14");
+            capabilities.setCapability("deviceName", "Sudhansu phone");
+            capabilities.setCapability("platformVersion", "17.5");
             capabilities.setCapability("appium:automationName", "XCUITest");
             capabilities.setCapability("appium:platformName", "iOS");
+            capabilities.setCapability("appium:bundleId", "com.setmore.app");
             // iOS capabilities may need adjustment; appPackage and appActivity are Android-specific
         }
 
