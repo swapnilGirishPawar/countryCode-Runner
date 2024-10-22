@@ -1,9 +1,11 @@
 package Utils;
 
+import BaseClass.Capabilities;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class BusinessProfileFunctions extends CommonUtils{
+public class BusinessProfileFunctions extends Capabilities {
     String CountryVal = "India";
     public List<String> SearchedCountries = new ArrayList<String>();
 

@@ -1,6 +1,5 @@
 package Utils;
 
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
@@ -13,8 +12,10 @@ import java.io.FileReader;
 import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
+import io.appium.java_client.ios.IOSDriver;
 
 public class CommonUtils {
+    public static IOSDriver driver;
     public static AndroidDriver androidDriver;
     public static IOSDriver iosDriver;
     public static Properties Prop;
