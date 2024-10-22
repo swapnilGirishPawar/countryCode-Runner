@@ -1,0 +1,2481 @@
+[
+  {
+    "name": "Afghanistan",
+    "currency": "Afghan afghani",
+    "currencyCode": "AFN",
+    "currencySymbol": "؋",
+    "countryCode": "AF",
+    "iso3": "AFG",
+    "dialingCode": "93",
+    "phoneNumber": "234567890"
+  },
+  {
+    "name": "Aland Islands",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "AX",
+    "iso3": "ALA",
+    "dialingCode": "358",
+    "phoneNumber": "181234567"
+  },
+  {
+    "name": "Albania",
+    "currency": "Albanian lek",
+    "currencyCode": "ALL",
+    "currencySymbol": "Lek",
+    "countryCode": "AL",
+    "iso3": "ALB",
+    "dialingCode": "355",
+    "phoneNumber": "22345678"
+  },
+  {
+    "name": "Algeria",
+    "currency": "Algerian dinar",
+    "currencyCode": "DZD",
+    "currencySymbol": "دج",
+    "countryCode": "DZ",
+    "iso3": "DZA",
+    "dialingCode": "213",
+    "phoneNumber": "12345678"
+  },
+  {
+    "name": "American Samoa",
+    "currency": "US Dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "AS",
+    "iso3": "ASM",
+    "dialingCode": "1684",
+    "phoneNumber": "6221234"
+  },
+  {
+    "name": "Andorra",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "AD",
+    "iso3": "AND",
+    "dialingCode": "376",
+    "phoneNumber": "712345"
+  },
+  {
+    "name": "Angola",
+    "currency": "Angolan kwanza",
+    "currencyCode": "AOA",
+    "currencySymbol": "Kz",
+    "countryCode": "AO",
+    "iso3": "AGO",
+    "dialingCode": "244",
+    "phoneNumber": "222123456"
+  },
+  {
+    "name": "Anguilla",
+    "currency": "East Caribbean dollar",
+    "currencyCode": "XCD",
+    "currencySymbol": "$",
+    "countryCode": "AI",
+    "iso3": "AIA",
+    "dialingCode": "1264",
+    "phoneNumber": "4612345"
+  },
+  {
+    "name": "Antigua And Barbuda",
+    "currency": "Eastern Caribbean dollar",
+    "currencyCode": "XCD",
+    "currencySymbol": "$",
+    "countryCode": "AG",
+    "iso3": "ATG",
+    "dialingCode": "1268",
+    "phoneNumber": "4601234"
+  },
+  {
+    "name": "Argentina",
+    "currency": "Argentine peso",
+    "currencyCode": "ARS",
+    "currencySymbol": "$",
+    "countryCode": "AR",
+    "iso3": "ARG",
+    "dialingCode": "54",
+    "phoneNumber": "1123456789"
+  },
+  {
+    "name": "Armenia",
+    "currency": "Armenian dram",
+    "currencyCode": "AMD",
+    "currencySymbol": "֏",
+    "countryCode": "AM",
+    "iso3": "ARM",
+    "dialingCode": "374",
+    "phoneNumber": "10123456"
+  },
+  {
+    "name": "Aruba",
+    "currency": "Aruban florin",
+    "currencyCode": "AWG",
+    "currencySymbol": "ƒ",
+    "countryCode": "AW",
+    "iso3": "ABW",
+    "dialingCode": "297",
+    "phoneNumber": "5212345"
+  },
+  {
+    "name": "Australia",
+    "currency": "Australian dollar",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "countryCode": "AU",
+    "iso3": "AUS",
+    "dialingCode": "61",
+    "phoneNumber": "212345678"
+  },
+  {
+    "name": "Austria",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "AT",
+    "iso3": "AUT",
+    "dialingCode": "43",
+    "phoneNumber": "1234567890"
+  },
+  {
+    "name": "Azerbaijan",
+    "currency": "Azerbaijani manat",
+    "currencyCode": "AZN",
+    "currencySymbol": "₼",
+    "countryCode": "AZ",
+    "iso3": "AZE",
+    "dialingCode": "994",
+    "phoneNumber": "123123456"
+  },
+  {
+    "name": "Bahamas",
+    "currency": "Bahamian Dollar",
+    "currencyCode": "BSD",
+    "currencySymbol": "$",
+    "countryCode": "BS",
+    "iso3": "BHS",
+    "dialingCode": "1242",
+    "phoneNumber": "3456789"
+  },
+  {
+    "name": "Bahrain",
+    "currency": "Bahraini dinar",
+    "currencyCode": "BHD",
+    "currencySymbol": ".د.ب",
+    "countryCode": "BH",
+    "iso3": "BHR",
+    "dialingCode": "973",
+    "phoneNumber": "17001234"
+  },
+  {
+    "name": "Bangladesh",
+    "currency": "Bangladeshi taka",
+    "currencyCode": "BDT",
+    "currencySymbol": "৳",
+    "countryCode": "BD",
+    "iso3": "BGD",
+    "dialingCode": "880",
+    "phoneNumber": "27111234"
+  },
+  {
+    "name": "Barbados",
+    "currency": "Barbadian dollar",
+    "currencyCode": "BBD",
+    "currencySymbol": "$",
+    "countryCode": "BB",
+    "iso3": "BRB",
+    "dialingCode": "1246",
+    "phoneNumber": "4123456"
+  },
+  {
+    "name": "Belarus",
+    "currency": "Belarusian ruble",
+    "currencyCode": "BYN",
+    "currencySymbol": "Br",
+    "countryCode": "BY",
+    "iso3": "BLR",
+    "dialingCode": "375",
+    "phoneNumber": "152450911"
+  },
+  {
+    "name": "Belgium",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "BE",
+    "iso3": "BEL",
+    "dialingCode": "32",
+    "phoneNumber": "12345678"
+  },
+  {
+    "name": "Belize",
+    "currency": "Belize dollar",
+    "currencyCode": "BZD",
+    "currencySymbol": "$",
+    "countryCode": "BZ",
+    "iso3": "BLZ",
+    "dialingCode": "501",
+    "phoneNumber": "2221234"
+  },
+  {
+    "name": "Benin",
+    "currency": "West African CFA franc",
+    "currencyCode": "XOF",
+    "currencySymbol": "CFA",
+    "countryCode": "BJ",
+    "iso3": "BEN",
+    "dialingCode": "229",
+    "phoneNumber": "20211234"
+  },
+  {
+    "name": "Bermuda",
+    "currency": "Bermudian dollar",
+    "currencyCode": "BMD",
+    "currencySymbol": "$",
+    "countryCode": "BM",
+    "iso3": "BMU",
+    "dialingCode": "1441",
+    "phoneNumber": "4123456"
+  },
+  {
+    "name": "Bhutan",
+    "currency": "Bhutanese ngultrum",
+    "currencyCode": "BTN",
+    "currencySymbol": "Nu.",
+    "countryCode": "BT",
+    "iso3": "BTN",
+    "dialingCode": "975",
+    "phoneNumber": "2345678"
+  },
+  {
+    "name": "Bolivia",
+    "currency": "Bolivian boliviano",
+    "currencyCode": "BOB",
+    "currencySymbol": "Bs.",
+    "countryCode": "BO",
+    "iso3": "BOL",
+    "dialingCode": "591",
+    "phoneNumber": "22123456"
+  },
+  {
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "BQ",
+    "iso3": "BES",
+    "dialingCode": "599",
+    "phoneNumber": "7151234"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "currency": "Bosnia and Herzegovina convertible mark",
+    "currencyCode": "BAM",
+    "currencySymbol": "KM",
+    "countryCode": "BA",
+    "iso3": "BIH",
+    "dialingCode": "387",
+    "phoneNumber": "30212345"
+  },
+  {
+    "name": "Botswana",
+    "currency": "Botswana pula",
+    "currencyCode": "BWP",
+    "currencySymbol": "P",
+    "countryCode": "BW",
+    "iso3": "BWA",
+    "dialingCode": "267",
+    "phoneNumber": "2401234"
+  },
+  {
+    "name": "Bouvet Island",
+    "currency": "Norwegian Krone",
+    "currencyCode": "NOK",
+    "currencySymbol": "kr",
+    "countryCode": "BV",
+    "iso3": "BVT",
+    "dialingCode": "47"
+  },
+  {
+    "name": "Brazil",
+    "currency": "Brazilian real",
+    "currencyCode": "BRL",
+    "currencySymbol": "R$",
+    "countryCode": "BR",
+    "iso3": "BRA",
+    "dialingCode": "55",
+    "phoneNumber": "1123456789"
+  },
+  {
+    "name": "British Indian Ocean Territory",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "IO",
+    "iso3": "IOT",
+    "dialingCode": "246",
+    "phoneNumber": "3709100"
+  },
+  {
+    "name": "Brunei Darussalam",
+    "currency": "Brunei dollar",
+    "currencyCode": "BND",
+    "currencySymbol": "$",
+    "countryCode": "BN",
+    "iso3": "BRN",
+    "dialingCode": "673",
+    "phoneNumber": "2345678"
+  },
+  {
+    "name": "Bulgaria",
+    "currency": "Bulgarian lev",
+    "currencyCode": "BGN",
+    "currencySymbol": "лв.",
+    "countryCode": "BG",
+    "iso3": "BGR",
+    "dialingCode": "359",
+    "phoneNumber": "2123456"
+  },
+  {
+    "name": "Burkina Faso",
+    "currency": "West African CFA franc",
+    "currencyCode": "XOF",
+    "currencySymbol": "CFA",
+    "countryCode": "BF",
+    "iso3": "BFA",
+    "dialingCode": "226",
+    "phoneNumber": "20491234"
+  },
+  {
+    "name": "Burundi",
+    "currency": "Burundian franc",
+    "currencyCode": "BIF",
+    "currencySymbol": "FBu",
+    "countryCode": "BI",
+    "iso3": "BDI",
+    "dialingCode": "257",
+    "phoneNumber": "22201234"
+  },
+  {
+    "name": "Cabo Verde",
+    "currency": "Cabo Verde Escudo",
+    "currencyCode": "CVE",
+    "currencySymbol": "$",
+    "countryCode": "CV",
+    "iso3": "CPV",
+    "dialingCode": "238",
+    "phoneNumber": "2211234"
+  },
+  {
+    "name": "Cambodia",
+    "currency": "Cambodian riel",
+    "currencyCode": "KHR",
+    "currencySymbol": "៛",
+    "countryCode": "KH",
+    "iso3": "KHM",
+    "dialingCode": "855",
+    "phoneNumber": "23756789"
+  },
+  {
+    "name": "Cameroon",
+    "currency": "Central African CFA franc",
+    "currencyCode": "XAF",
+    "currencySymbol": "FCFA",
+    "countryCode": "CM",
+    "iso3": "CMR",
+    "dialingCode": "237",
+    "phoneNumber": "222123456"
+  },
+  {
+    "name": "Canada",
+    "currency": "Canadian dollar",
+    "currencyCode": "CAD",
+    "currencySymbol": "$",
+    "countryCode": "CA",
+    "iso3": "CAN",
+    "dialingCode": "1",
+    "phoneNumber": "5062345678"
+  },
+  {
+    "name": "Cayman Islands",
+    "currency": "Cayman Islands dollar",
+    "currencyCode": "KYD",
+    "currencySymbol": "$",
+    "countryCode": "KY",
+    "iso3": "CYM",
+    "dialingCode": "1345",
+    "phoneNumber": "2221234"
+  },
+  {
+    "name": "Central African Republic",
+    "currency": "Central African CFA franc",
+    "currencyCode": "XAF",
+    "currencySymbol": "FCFA",
+    "countryCode": "CF",
+    "iso3": "CAF",
+    "dialingCode": "236",
+    "phoneNumber": "21612345"
+  },
+  {
+    "name": "Chad",
+    "currency": "Central African CFA franc",
+    "currencyCode": "XAF",
+    "currencySymbol": "FCFA",
+    "countryCode": "TD",
+    "iso3": "TCD",
+    "dialingCode": "235",
+    "phoneNumber": "22501234"
+  },
+  {
+    "name": "Chile",
+    "currency": "Chilean peso",
+    "currencyCode": "CLP",
+    "currencySymbol": "$",
+    "countryCode": "CL",
+    "iso3": "CHL",
+    "dialingCode": "56",
+    "phoneNumber": "221234567"
+  },
+  {
+    "name": "China",
+    "currency": "Chinese yuan",
+    "currencyCode": "CNY",
+    "currencySymbol": "¥",
+    "countryCode": "CN",
+    "iso3": "CHN",
+    "dialingCode": "86",
+    "phoneNumber": "1012345678"
+  },
+  {
+    "name": "Christmas Island",
+    "currency": "Australian dollar",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "countryCode": "CX",
+    "iso3": "CXR",
+    "dialingCode": "61",
+    "phoneNumber": "891641234"
+  },
+  {
+    "name": "Cocos (Keeling) Islands",
+    "currency": "Australian dollar",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "countryCode": "CC",
+    "iso3": "CCK",
+    "dialingCode": "61",
+    "phoneNumber": "891621234"
+  },
+  {
+    "name": "Colombia",
+    "currency": "Colombian peso",
+    "currencyCode": "COP",
+    "currencySymbol": "$",
+    "countryCode": "CO",
+    "iso3": "COL",
+    "dialingCode": "57",
+    "phoneNumber": "6012345678"
+  },
+  {
+    "name": "Comoros",
+    "currency": "Comorian franc",
+    "currencyCode": "KMF",
+    "currencySymbol": "CF",
+    "countryCode": "KM",
+    "iso3": "COM",
+    "dialingCode": "269",
+    "phoneNumber": "7712345"
+  },
+  {
+    "name": "Congo - Kinshasa",
+    "currency": "Congolese Franc",
+    "currencyCode": "CDF",
+    "currencySymbol": "FC",
+    "countryCode": "CD",
+    "iso3": "COD",
+    "dialingCode": "243",
+    "phoneNumber": "1234567"
+  },
+  {
+    "name": "Congo - Brazzaville",
+    "currency": "CFA Franc BEAC",
+    "currencyCode": "XAF",
+    "currencySymbol": "FC",
+    "countryCode": "CG",
+    "iso3": "COG",
+    "dialingCode": "242",
+    "phoneNumber": "222123456"
+  },
+  {
+    "name": "Cook Islands",
+    "currency": "Cook Islands dollar",
+    "currencyCode": "NZD",
+    "currencySymbol": "$",
+    "countryCode": "CK",
+    "iso3": "COK",
+    "dialingCode": "682",
+    "phoneNumber": "21234"
+  },
+  {
+    "name": "Costa Rica",
+    "currency": "Costa Rican colón",
+    "currencyCode": "CRC",
+    "currencySymbol": "₡",
+    "countryCode": "CR",
+    "iso3": "CRI",
+    "dialingCode": "506",
+    "phoneNumber": "22123456"
+  },
+  {
+    "name": "Côte d'Ivoire",
+    "currency": "West African CFA franc",
+    "currencyCode": "XOF",
+    "currencySymbol": "CFA",
+    "countryCode": "CI",
+    "iso3": "CIV",
+    "dialingCode": "225",
+    "phoneNumber": "2123456789"
+  },
+  {
+    "name": "Croatia",
+    "currency": "Croatian kuna",
+    "currencyCode": "HRK",
+    "currencySymbol": "kn",
+    "countryCode": "HR",
+    "iso3": "HRV",
+    "dialingCode": "385",
+    "phoneNumber": "12345678"
+  },
+  {
+    "name": "Cuba",
+    "currency": "Cuban peso",
+    "currencyCode": "CUP",
+    "currencySymbol": "$",
+    "countryCode": "CU",
+    "iso3": "CUB",
+    "dialingCode": "53",
+    "phoneNumber": "71234567"
+  },
+  {
+    "name": "Curaçao",
+    "currency": "Netherlands Antillean guilder",
+    "currencyCode": "ANG",
+    "currencySymbol": "ƒ",
+    "countryCode": "CW",
+    "iso3": "CUW",
+    "dialingCode": "599",
+    "phoneNumber": "94351234"
+  },
+  {
+    "name": "Cyprus",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "CY",
+    "iso3": "CYP",
+    "dialingCode": "357",
+    "phoneNumber": "22345678"
+  },
+  {
+    "name": "Czech Republic",
+    "currency": "Czech koruna",
+    "currencyCode": "CZK",
+    "currencySymbol": "Kč",
+    "countryCode": "CZ",
+    "iso3": "CZE",
+    "dialingCode": "420",
+    "phoneNumber": "212345678"
+  },
+  {
+    "name": "Denmark",
+    "currency": "Danish krone",
+    "currencyCode": "DKK",
+    "currencySymbol": "Kr.",
+    "countryCode": "DK",
+    "iso3": "DNK",
+    "dialingCode": "45",
+    "phoneNumber": "32123456"
+  },
+  {
+    "name": "Djibouti",
+    "currency": "Djiboutian franc",
+    "currencyCode": "DJF",
+    "currencySymbol": "Fdj",
+    "countryCode": "DJ",
+    "iso3": "DJI",
+    "dialingCode": "253",
+    "phoneNumber": "21360003"
+  },
+  {
+    "name": "Dominica",
+    "currency": "Eastern Caribbean dollar",
+    "currencyCode": "XCD",
+    "currencySymbol": "$",
+    "countryCode": "DM",
+    "iso3": "DMA",
+    "dialingCode": "1767",
+    "phoneNumber": "4201234"
+  },
+  {
+    "name": "Dominican Republic",
+    "currency": "Dominican peso",
+    "currencyCode": "DOP",
+    "currencySymbol": "$",
+    "countryCode": "DO",
+    "iso3": "DOM",
+    "dialingCode": "1",
+    "phoneNumber": "8092345678"
+  },
+  {
+    "name": "Ecuador",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "EC",
+    "iso3": "ECU",
+    "dialingCode": "593",
+    "phoneNumber": "22123456"
+  },
+  {
+    "name": "Egypt",
+    "currency": "Egyptian pound",
+    "currencyCode": "EGP",
+    "currencySymbol": "£",
+    "countryCode": "EG",
+    "iso3": "EGY",
+    "dialingCode": "20",
+    "phoneNumber": "234567890"
+  },
+  {
+    "name": "El Salvador",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "SV",
+    "iso3": "SLV",
+    "dialingCode": "503",
+    "phoneNumber": "21234567"
+  },
+  {
+    "name": "Equatorial Guinea",
+    "currency": "Central African CFA franc",
+    "currencyCode": "XAF",
+    "currencySymbol": "FCFA",
+    "countryCode": "GQ",
+    "iso3": "GNQ",
+    "dialingCode": "240",
+    "phoneNumber": "333091234"
+  },
+  {
+    "name": "Eritrea",
+    "currency": "Eritrean nakfa",
+    "currencyCode": "ERN",
+    "currencySymbol": "Nfk",
+    "countryCode": "ER",
+    "iso3": "ERI",
+    "dialingCode": "291",
+    "phoneNumber": "8370362"
+  },
+  {
+    "name": "Estonia",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "EE",
+    "iso3": "EST",
+    "dialingCode": "372",
+    "phoneNumber": "3212345"
+  },
+  {
+    "name": "Eswatini",
+    "currency": "Swazi Lilangeni",
+    "currencyCode": "SZL",
+    "currencySymbol": "L",
+    "countryCode": "SZ",
+    "iso3": "SWZ",
+    "dialingCode": "268",
+    "phoneNumber": "22171234"
+  },
+  {
+    "name": "Ethiopia",
+    "currency": "Ethiopian birr",
+    "currencyCode": "ETB",
+    "currencySymbol": "Br",
+    "countryCode": "ET",
+    "iso3": "ETH",
+    "dialingCode": "251",
+    "phoneNumber": "111112345"
+  },
+  {
+    "name": "Falkland Islands (Malvinas)",
+    "currency": "Falkland Islands pound",
+    "currencyCode": "FKP",
+    "currencySymbol": "£",
+    "countryCode": "FK",
+    "iso3": "FLK",
+    "dialingCode": "500",
+    "phoneNumber": "31234"
+  },
+  {
+    "name": "Faroe Islands",
+    "currency": "Danish krone",
+    "currencyCode": "DKK",
+    "currencySymbol": "Kr.",
+    "countryCode": "FO",
+    "iso3": "FRO",
+    "dialingCode": "298",
+    "phoneNumber": "201234"
+  },
+  {
+    "name": "Fiji",
+    "currency": "Fijian dollar",
+    "currencyCode": "FJD",
+    "currencySymbol": "$",
+    "countryCode": "FJ",
+    "iso3": "FJI",
+    "dialingCode": "679",
+    "phoneNumber": "3212345"
+  },
+  {
+    "name": "Finland",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "FI",
+    "iso3": "FIN",
+    "dialingCode": "358",
+    "phoneNumber": "131234567"
+  },
+  {
+    "name": "France",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "FR",
+    "iso3": "FRA",
+    "dialingCode": "33",
+    "phoneNumber": "123456789"
+  },
+  {
+    "name": "French Guiana",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "GF",
+    "iso3": "GUF",
+    "dialingCode": "594"
+  },
+  {
+    "name": "French Polynesia",
+    "currency": "CFP franc",
+    "currencyCode": "XPF",
+    "currencySymbol": "₣",
+    "countryCode": "PF",
+    "iso3": "PYF",
+    "dialingCode": "689"
+  },
+  {
+    "name": "French Southern Territories",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "TF",
+    "iso3": "ATF",
+    "dialingCode": "262"
+  },
+  {
+    "name": "Gabon",
+    "currency": "Central African CFA franc",
+    "currencyCode": "XAF",
+    "currencySymbol": "FCFA",
+    "countryCode": "GA",
+    "iso3": "GAB",
+    "dialingCode": "241"
+  },
+  {
+    "name": "Gambia",
+    "currency": "Gambian dalasi",
+    "currencyCode": "GMD",
+    "currencySymbol": "D",
+    "countryCode": "GM",
+    "iso3": "GMB",
+    "dialingCode": "220"
+  },
+  {
+    "name": "Georgia",
+    "currency": "Georgian lari",
+    "currencyCode": "GEL",
+    "currencySymbol": "ლ",
+    "countryCode": "GE",
+    "iso3": "GEO",
+    "dialingCode": "995"
+  },
+  {
+    "name": "Germany",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "DE",
+    "iso3": "DEU",
+    "dialingCode": "49",
+    "phoneNumber": "30123456"
+  },
+  {
+    "name": "Ghana",
+    "currency": "Ghanaian cedi",
+    "currencyCode": "GHS",
+    "currencySymbol": "GH₵",
+    "countryCode": "GH",
+    "iso3": "GHA",
+    "dialingCode": "233",
+    "phoneNumber": "302345678"
+  },
+  {
+    "name": "Gibraltar",
+    "currency": "Gibraltar pound",
+    "currencyCode": "GIP",
+    "currencySymbol": "£",
+    "countryCode": "GI",
+    "iso3": "GIB",
+    "dialingCode": "350",
+    "phoneNumber": "20012345"
+  },
+  {
+    "name": "Greece",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "GR",
+    "iso3": "GRC",
+    "dialingCode": "30",
+    "phoneNumber": "2123456789"
+  },
+  {
+    "name": "Greenland",
+    "currency": "Danish krone",
+    "currencyCode": "DKK",
+    "currencySymbol": "Kr.",
+    "countryCode": "GL",
+    "iso3": "GRL",
+    "dialingCode": "299",
+    "phoneNumber": "321000"
+  },
+  {
+    "name": "Grenada",
+    "currency": "Eastern Caribbean dollar",
+    "currencyCode": "XCD",
+    "currencySymbol": "$",
+    "countryCode": "GD",
+    "iso3": "GRD",
+    "dialingCode": "1473",
+    "phoneNumber": "2691234"
+  },
+  {
+    "name": "Guadeloupe",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "GP",
+    "iso3": "GLP",
+    "dialingCode": "590",
+    "phoneNumber": "590201234"
+  },
+  {
+    "name": "Guam",
+    "currency": "US Dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "GU",
+    "iso3": "GUM",
+    "dialingCode": "1671",
+    "phoneNumber": "3001234"
+  },
+  {
+    "name": "Guatemala",
+    "currency": "Guatemalan quetzal",
+    "currencyCode": "GTQ",
+    "currencySymbol": "Q",
+    "countryCode": "GT",
+    "iso3": "GTM",
+    "dialingCode": "502",
+    "phoneNumber": "22456789"
+  },
+  {
+    "name": "Guernsey",
+    "currency": "British pound",
+    "currencyCode": "GBP",
+    "currencySymbol": "£",
+    "countryCode": "GG",
+    "iso3": "GGY",
+    "dialingCode": "44",
+    "phoneNumber": "1481256789"
+  },
+  {
+    "name": "Guinea",
+    "currency": "Guinean franc",
+    "currencyCode": "GNF",
+    "currencySymbol": "FG",
+    "countryCode": "GN",
+    "iso3": "GIN",
+    "dialingCode": "224",
+    "phoneNumber": "30241234"
+  },
+  {
+    "name": "Guinea-Bissau",
+    "currency": "West African CFA franc",
+    "currencyCode": "XOF",
+    "currencySymbol": "CFA",
+    "countryCode": "GW",
+    "iso3": "GNB",
+    "dialingCode": "245",
+    "phoneNumber": "443201234"
+  },
+  {
+    "name": "Guyana",
+    "currency": "Guyanese dollar",
+    "currencyCode": "GYD",
+    "currencySymbol": "$",
+    "countryCode": "GY",
+    "iso3": "GUY",
+    "dialingCode": "592",
+    "phoneNumber": "2201234"
+  },
+  {
+    "name": "Haiti",
+    "currency": "Haitian gourde",
+    "currencyCode": "HTG",
+    "currencySymbol": "G",
+    "countryCode": "HT",
+    "iso3": "HTI",
+    "dialingCode": "509",
+    "phoneNumber": "22453300"
+  },
+  {
+    "name": "Heard Island and McDonald Islands",
+    "currency": "Australian dollar",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "countryCode": "HM",
+    "iso3": "HMD",
+    "dialingCode": "672"
+  },
+  {
+    "name": "Holy See (Vatican City State)",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "VA",
+    "iso3": "VAT",
+    "dialingCode": "379",
+    "phoneNumber": "669812345"
+  },
+  {
+    "name": "Honduras",
+    "currency": "Honduran lempira",
+    "currencyCode": "HNL",
+    "currencySymbol": "L",
+    "countryCode": "HN",
+    "iso3": "HND",
+    "dialingCode": "504",
+    "phoneNumber": "22123456"
+  },
+  {
+    "name": "Hong Kong",
+    "currency": "Hong Kong dollar",
+    "currencyCode": "HKD",
+    "currencySymbol": "$",
+    "countryCode": "HK",
+    "iso3": "HKG",
+    "dialingCode": "852",
+    "phoneNumber": "21234567"
+  },
+  {
+    "name": "Hungary",
+    "currency": "Hungarian forint",
+    "currencyCode": "HUF",
+    "currencySymbol": "Ft",
+    "countryCode": "HU",
+    "iso3": "HUN",
+    "dialingCode": "36",
+    "phoneNumber": "12345678"
+  },
+  {
+    "name": "Iceland",
+    "currency": "Icelandic króna",
+    "currencyCode": "ISK",
+    "currencySymbol": "kr",
+    "countryCode": "IS",
+    "iso3": "ISL",
+    "dialingCode": "354",
+    "phoneNumber": "4101234"
+  },
+  {
+    "name": "India",
+    "currency": "Indian rupee",
+    "currencyCode": "INR",
+    "currencySymbol": "₹",
+    "countryCode": "IN",
+    "iso3": "IND",
+    "dialingCode": "91",
+    "phoneNumber": "7410410123"
+  },
+  {
+    "name": "Indonesia",
+    "currency": "Indonesian rupiah",
+    "currencyCode": "IDR",
+    "currencySymbol": "Rp",
+    "countryCode": "ID",
+    "iso3": "IDN",
+    "dialingCode": "62",
+    "phoneNumber": "218350123"
+  },
+  {
+    "name": "Iran",
+    "currency": "Iranian rial",
+    "currencyCode": "IRR",
+    "currencySymbol": "﷼",
+    "countryCode": "IR",
+    "iso3": "IRN",
+    "dialingCode": "98",
+    "phoneNumber": "2123456789"
+  },
+  {
+    "name": "Iraq",
+    "currency": "Iraqi dinar",
+    "currencyCode": "IQD",
+    "currencySymbol": "د.ع",
+    "countryCode": "IQ",
+    "iso3": "IRQ",
+    "dialingCode": "964",
+    "phoneNumber": "12345678"
+  },
+  {
+    "name": "Ireland",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "IE",
+    "iso3": "IRL",
+    "dialingCode": "353",
+    "phoneNumber": "2212345"
+  },
+  {
+    "name": "Isle of Man",
+    "currency": "British pound",
+    "currencyCode": "GBP",
+    "currencySymbol": "£",
+    "countryCode": "IM",
+    "iso3": "IMN",
+    "dialingCode": "44",
+    "phoneNumber": "1624756789"
+  },
+  {
+    "name": "Israel",
+    "currency": "Israeli new shekel",
+    "currencyCode": "ILS",
+    "currencySymbol": "₪",
+    "countryCode": "IL",
+    "iso3": "ISR",
+    "dialingCode": "972",
+    "phoneNumber": "21234567"
+  },
+  {
+    "name": "Italy",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "IT",
+    "iso3": "ITA",
+    "dialingCode": "39",
+    "phoneNumber": "0212345678"
+  },
+  {
+    "name": "Jamaica",
+    "currency": "Jamaican dollar",
+    "currencyCode": "JMD",
+    "currencySymbol": "J$",
+    "countryCode": "JM",
+    "iso3": "JAM",
+    "dialingCode": "1876",
+    "phoneNumber": "5230123"
+  },
+  {
+    "name": "Japan",
+    "currency": "Japanese yen",
+    "currencyCode": "JPY",
+    "currencySymbol": "¥",
+    "countryCode": "JP",
+    "iso3": "JPN",
+    "dialingCode": "81",
+    "phoneNumber": "312345678"
+  },
+  {
+    "name": "Jersey",
+    "currency": "British pound",
+    "currencyCode": "GBP",
+    "currencySymbol": "£",
+    "countryCode": "JE",
+    "iso3": "JEY",
+    "dialingCode": "44",
+    "phoneNumber": "1534456789"
+  },
+  {
+    "name": "Jordan",
+    "currency": "Jordanian dinar",
+    "currencyCode": "JOD",
+    "currencySymbol": "JD",
+    "countryCode": "JO",
+    "iso3": "JOR",
+    "dialingCode": "962",
+    "phoneNumber": "62001234"
+  },
+  {
+    "name": "Kazakhstan",
+    "currency": "Kazakhstani tenge",
+    "currencyCode": "KZT",
+    "currencySymbol": "〒",
+    "countryCode": "KZ",
+    "iso3": "KAZ",
+    "dialingCode": "7",
+    "phoneNumber": "7123456789"
+  },
+  {
+    "name": "Kenya",
+    "currency": "Kenyan shilling",
+    "currencyCode": "KES",
+    "currencySymbol": "KSh",
+    "countryCode": "KE",
+    "iso3": "KEN",
+    "dialingCode": "254",
+    "phoneNumber": "202012345"
+  },
+  {
+    "name": "Kiribati",
+    "currency": "Australian dollar",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "countryCode": "KI",
+    "iso3": "KIR",
+    "dialingCode": "686",
+    "phoneNumber": "31234"
+  },
+  {
+    "name": "North Korea",
+    "currency": "North Korean Won",
+    "currencyCode": "KPW",
+    "currencySymbol": "₩",
+    "countryCode": "KP",
+    "iso3": "PRK",
+    "dialingCode": "850",
+    "phoneNumber": "21234567"
+  },
+  {
+    "name": "South Korea",
+    "currency": "Won",
+    "currencyCode": "KRW",
+    "currencySymbol": "₩",
+    "countryCode": "KR",
+    "iso3": "KOR",
+    "dialingCode": "82",
+    "phoneNumber": "22123456"
+  },
+  {
+    "name": "Kosovo",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "XK",
+    "iso3": "XKX",
+    "dialingCode": "383",
+    "phoneNumber": "28012345"
+  },
+  {
+    "name": "Kuwait",
+    "currency": "Kuwaiti dinar",
+    "currencyCode": "KWD",
+    "currencySymbol": "KD",
+    "countryCode": "KW",
+    "iso3": "KWT",
+    "dialingCode": "965",
+    "phoneNumber": "22345678"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "currency": "Kyrgyzstani som",
+    "currencyCode": "KGS",
+    "currencySymbol": "лв",
+    "countryCode": "KG",
+    "iso3": "KGZ",
+    "dialingCode": "996",
+    "phoneNumber": "312123456"
+  },
+  {
+    "name": "Laos",
+    "currency": "Lao kip",
+    "currencyCode": "LAK",
+    "currencySymbol": "₭",
+    "countryCode": "LA",
+    "iso3": "LAO",
+    "dialingCode": "856",
+    "phoneNumber": "21212862"
+  },
+  {
+    "name": "Latvia",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "LV",
+    "iso3": "LVA",
+    "dialingCode": "371",
+    "phoneNumber": "63123456"
+  },
+  {
+    "name": "Lebanon",
+    "currency": "Lebanese pound",
+    "currencyCode": "LBP",
+    "currencySymbol": "£",
+    "countryCode": "LB",
+    "iso3": "LBN",
+    "dialingCode": "961",
+    "phoneNumber": "1123456"
+  },
+  {
+    "name": "Lesotho",
+    "currency": "Lesotho loti",
+    "currencyCode": "LSL",
+    "currencySymbol": "L",
+    "countryCode": "LS",
+    "iso3": "LSO",
+    "dialingCode": "266",
+    "phoneNumber": "22123456"
+  },
+  {
+    "name": "Liberia",
+    "currency": "Liberian dollar",
+    "currencyCode": "LRD",
+    "currencySymbol": "$",
+    "countryCode": "LR",
+    "iso3": "LBR",
+    "dialingCode": "231",
+    "phoneNumber": "21234567"
+  },
+  {
+    "name": "Libya",
+    "currency": "Libyan dinar",
+    "currencyCode": "LYD",
+    "currencySymbol": "LD",
+    "countryCode": "LY",
+    "iso3": "LBY",
+    "dialingCode": "218",
+    "phoneNumber": "212345678"
+  },
+  {
+    "name": "Liechtenstein",
+    "currency": "Swiss franc",
+    "currencyCode": "CHF",
+    "currencySymbol": "CHf",
+    "countryCode": "LI",
+    "iso3": "LIE",
+    "dialingCode": "423",
+    "phoneNumber": "2345678"
+  },
+  {
+    "name": "Lithuania",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "LT",
+    "iso3": "LTU",
+    "dialingCode": "370",
+    "phoneNumber": "31234567"
+  },
+  {
+    "name": "Luxembourg",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "LU",
+    "iso3": "LUX",
+    "dialingCode": "352",
+    "phoneNumber": "27123456"
+  },
+  {
+    "name": "Macao",
+    "currency": "Macanese pataca",
+    "currencyCode": "MOP",
+    "currencySymbol": "$",
+    "countryCode": "MO",
+    "iso3": "MAC",
+    "dialingCode": "853",
+    "phoneNumber": "28212345"
+  },
+  {
+    "name": "North Macedonia",
+    "currency": "Denar",
+    "currencyCode": "MKD",
+    "currencySymbol": "ден",
+    "countryCode": "MK",
+    "iso3": "MKD",
+    "dialingCode": "389",
+    "phoneNumber": "22012345"
+  },
+  {
+    "name": "Madagascar",
+    "currency": "Malagasy ariary",
+    "currencyCode": "MGA",
+    "currencySymbol": "Ar",
+    "countryCode": "MG",
+    "iso3": "MDG",
+    "dialingCode": "261",
+    "phoneNumber": "202123456"
+  },
+  {
+    "name": "Malawi",
+    "currency": "Malawian kwacha",
+    "currencyCode": "MWK",
+    "currencySymbol": "MK",
+    "countryCode": "MW",
+    "iso3": "MWI",
+    "dialingCode": "265",
+    "phoneNumber": "1234567"
+  },
+  {
+    "name": "Malaysia",
+    "currency": "Malaysian ringgit",
+    "currencyCode": "MYR",
+    "currencySymbol": "RM",
+    "countryCode": "MY",
+    "iso3": "MYS",
+    "dialingCode": "60",
+    "phoneNumber": "323856789"
+  },
+  {
+    "name": "Maldives",
+    "currency": "Maldivian rufiyaa",
+    "currencyCode": "MVR",
+    "currencySymbol": "Rf",
+    "countryCode": "MV",
+    "iso3": "MDV",
+    "dialingCode": "960",
+    "phoneNumber": "6701234"
+  },
+  {
+    "name": "Mali",
+    "currency": "West African CFA franc",
+    "currencyCode": "XOF",
+    "currencySymbol": "CFA",
+    "countryCode": "ML",
+    "iso3": "MLI",
+    "dialingCode": "223",
+    "phoneNumber": "20212345"
+  },
+  {
+    "name": "Malta",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "MT",
+    "iso3": "MLT",
+    "dialingCode": "356",
+    "phoneNumber": "21001234"
+  },
+  {
+    "name": "Marshall Islands",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "MH",
+    "iso3": "MHL",
+    "dialingCode": "692",
+    "phoneNumber": "2471234"
+  },
+  {
+    "name": "Martinique",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "MQ",
+    "iso3": "MTQ",
+    "dialingCode": "596",
+    "phoneNumber": "596301234"
+  },
+  {
+    "name": "Mauritania",
+    "currency": "Mauritanian ouguiya",
+    "currencyCode": "MRO",
+    "currencySymbol": "UM",
+    "countryCode": "MR",
+    "iso3": "MRT",
+    "dialingCode": "222",
+    "phoneNumber": "35123456"
+  },
+  {
+    "name": "Mauritius",
+    "currency": "Mauritian rupee",
+    "currencyCode": "MUR",
+    "currencySymbol": "₨",
+    "countryCode": "MU",
+    "iso3": "MUS",
+    "dialingCode": "230",
+    "phoneNumber": "54480123"
+  },
+  {
+    "name": "Mayotte",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "YT",
+    "iso3": "MYT",
+    "dialingCode": "262",
+    "phoneNumber": "269601234"
+  },
+  {
+    "name": "Mexico",
+    "currency": "Mexican peso",
+    "currencyCode": "MXN",
+    "currencySymbol": "$",
+    "countryCode": "MX",
+    "iso3": "MEX",
+    "dialingCode": "52",
+    "phoneNumber": "2001234567"
+  },
+  {
+    "name": "Micronesia",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "FM",
+    "iso3": "FSM",
+    "dialingCode": "691",
+    "phoneNumber": "3201234"
+  },
+  {
+    "name": "Moldova",
+    "currency": "Moldovan leu",
+    "currencyCode": "MDL",
+    "currencySymbol": "L",
+    "countryCode": "MD",
+    "iso3": "MDA",
+    "dialingCode": "373",
+    "phoneNumber": "22212345"
+  },
+  {
+    "name": "Monaco",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "MC",
+    "iso3": "MCO",
+    "dialingCode": "377",
+    "phoneNumber": "99123456"
+  },
+  {
+    "name": "Mongolia",
+    "currency": "Mongolian tögrög",
+    "currencyCode": "MNT",
+    "currencySymbol": "₮",
+    "countryCode": "MN",
+    "iso3": "MNG",
+    "dialingCode": "976",
+    "phoneNumber": "53123456"
+  },
+  {
+    "name": "Montenegro",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "ME",
+    "iso3": "MNE",
+    "dialingCode": "382",
+    "phoneNumber": "30234567"
+  },
+  {
+    "name": "Montserrat",
+    "currency": "Eastern Caribbean dollar",
+    "currencyCode": "XCD",
+    "currencySymbol": "$",
+    "countryCode": "MS",
+    "iso3": "MSR",
+    "dialingCode": "1664",
+    "phoneNumber": "4912345"
+  },
+  {
+    "name": "Morocco",
+    "currency": "Moroccan dirham",
+    "currencyCode": "MAD",
+    "currencySymbol": "MAD",
+    "countryCode": "MA",
+    "iso3": "MAR",
+    "dialingCode": "212",
+    "phoneNumber": "520123456"
+  },
+  {
+    "name": "Mozambique",
+    "currency": "Mozambican metical",
+    "currencyCode": "MZN",
+    "currencySymbol": "MT",
+    "countryCode": "MZ",
+    "iso3": "MOZ",
+    "dialingCode": "258",
+    "phoneNumber": "21123456"
+  },
+  {
+    "name": "Myanmar",
+    "currency": "Burmese kyat",
+    "currencyCode": "MMK",
+    "currencySymbol": "K",
+    "countryCode": "MM",
+    "iso3": "MMR",
+    "dialingCode": "95",
+    "phoneNumber": "1234567"
+  },
+  {
+    "name": "Namibia",
+    "currency": "Namibian dollar",
+    "currencyCode": "NAD",
+    "currencySymbol": "$",
+    "countryCode": "NA",
+    "iso3": "NAM",
+    "dialingCode": "264",
+    "phoneNumber": "61221234"
+  },
+  {
+    "name": "Nauru",
+    "currency": "Australian dollar",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "countryCode": "NR",
+    "iso3": "NRU",
+    "dialingCode": "674",
+    "phoneNumber": "4441234"
+  },
+  {
+    "name": "Nepal",
+    "currency": "Nepalese rupee",
+    "currencyCode": "NPR",
+    "currencySymbol": "₨",
+    "countryCode": "NP",
+    "iso3": "NPL",
+    "dialingCode": "977",
+    "phoneNumber": "14567890"
+  },
+  {
+    "name": "Netherlands",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "NL",
+    "iso3": "NLD",
+    "dialingCode": "31",
+    "phoneNumber": "101234567"
+  },
+  {
+    "name": "New Caledonia",
+    "currency": "CFP franc",
+    "currencyCode": "XPF",
+    "currencySymbol": "₣",
+    "countryCode": "NC",
+    "iso3": "NCL",
+    "dialingCode": "687",
+    "phoneNumber": "201234"
+  },
+  {
+    "name": "New Zealand",
+    "currency": "New Zealand dollar",
+    "currencyCode": "NZD",
+    "currencySymbol": "$",
+    "countryCode": "NZ",
+    "iso3": "NZL",
+    "dialingCode": "64",
+    "phoneNumber": "32345678"
+  },
+  {
+    "name": "Nicaragua",
+    "currency": "Nicaraguan córdoba",
+    "currencyCode": "NIO",
+    "currencySymbol": "C$",
+    "countryCode": "NI",
+    "iso3": "NIC",
+    "dialingCode": "505",
+    "phoneNumber": "21234567"
+  },
+  {
+    "name": "Niger",
+    "currency": "West African CFA franc",
+    "currencyCode": "XOF",
+    "currencySymbol": "CFA",
+    "countryCode": "NE",
+    "iso3": "NER",
+    "dialingCode": "227",
+    "phoneNumber": "20201234"
+  },
+  {
+    "name": "Nigeria",
+    "currency": "Nigerian naira",
+    "currencyCode": "NGN",
+    "currencySymbol": "₦",
+    "countryCode": "NG",
+    "iso3": "NGA",
+    "dialingCode": "234",
+    "phoneNumber": "18040123"
+  },
+  {
+    "name": "Niue",
+    "currency": "New Zealand dollar",
+    "currencyCode": "NZD",
+    "currencySymbol": "$",
+    "countryCode": "NU",
+    "iso3": "NIU",
+    "dialingCode": "683",
+    "phoneNumber": "7012"
+  },
+  {
+    "name": "Norfolk Island",
+    "currency": "Australian dollar",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "countryCode": "NF",
+    "iso3": "NFK",
+    "dialingCode": "672",
+    "phoneNumber": "106609"
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "MP",
+    "iso3": "MNP",
+    "dialingCode": "1670",
+    "phoneNumber": "2345678"
+  },
+  {
+    "name": "Norway",
+    "currency": "Norwegian krone",
+    "currencyCode": "NOK",
+    "currencySymbol": "kr",
+    "countryCode": "NO",
+    "iso3": "NOR",
+    "dialingCode": "47",
+    "phoneNumber": "21234567"
+  },
+  {
+    "name": "Oman",
+    "currency": "Omani rial",
+    "currencyCode": "OMR",
+    "currencySymbol": "﷼",
+    "countryCode": "OM",
+    "iso3": "OMN",
+    "dialingCode": "968",
+    "phoneNumber": "23123456"
+  },
+  {
+    "name": "Pakistan",
+    "currency": "Pakistani rupee",
+    "currencyCode": "PKR",
+    "currencySymbol": "₨",
+    "countryCode": "PK",
+    "iso3": "PAK",
+    "dialingCode": "92",
+    "phoneNumber": "2123456789"
+  },
+  {
+    "name": "Palau",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "PW",
+    "iso3": "PLW",
+    "dialingCode": "680",
+    "phoneNumber": "2771234"
+  },
+  {
+    "name": "Palestinian Territory",
+    "currency": "Israeli shekels",
+    "currencyCode": "ILS",
+    "currencySymbol": "ج.م",
+    "countryCode": "PS",
+    "iso3": "PSE",
+    "dialingCode": "970",
+    "phoneNumber": "22234567"
+  },
+  {
+    "name": "Panama",
+    "currency": "Panamanian balboa",
+    "currencyCode": "PAB",
+    "currencySymbol": "B/.",
+    "countryCode": "PA",
+    "iso3": "PAN",
+    "dialingCode": "507",
+    "phoneNumber": "2001234"
+  },
+  {
+    "name": "Papua new Guinea",
+    "currency": "Papua New Guinean kina",
+    "currencyCode": "PGK",
+    "currencySymbol": "K",
+    "countryCode": "PG",
+    "iso3": "PNG",
+    "dialingCode": "675",
+    "phoneNumber": "3123456"
+  },
+  {
+    "name": "Paraguay",
+    "currency": "Paraguayan guarani",
+    "currencyCode": "PYG",
+    "currencySymbol": "₲",
+    "countryCode": "PY",
+    "iso3": "PRY",
+    "dialingCode": "595",
+    "phoneNumber": "212345678"
+  },
+  {
+    "name": "Peru",
+    "currency": "Peruvian sol",
+    "currencyCode": "PEN",
+    "currencySymbol": "S/.",
+    "countryCode": "PE",
+    "iso3": "PER",
+    "dialingCode": "51",
+    "phoneNumber": "11234567"
+  },
+  {
+    "name": "Philippines",
+    "currency": "Philippine peso",
+    "currencyCode": "PHP",
+    "currencySymbol": "₱",
+    "countryCode": "PH",
+    "iso3": "PHL",
+    "dialingCode": "63",
+    "phoneNumber": "232345678"
+  },
+  {
+    "name": "Pitcairn",
+    "currency": "New Zealand dollar",
+    "currencyCode": "NZD",
+    "currencySymbol": "$",
+    "countryCode": "PN",
+    "iso3": "PCN",
+    "dialingCode": "64"
+  },
+  {
+    "name": "Poland",
+    "currency": "Polish złoty",
+    "currencyCode": "PLN",
+    "currencySymbol": "zł",
+    "countryCode": "PL",
+    "iso3": "POL",
+    "dialingCode": "48",
+    "phoneNumber": "123456789"
+  },
+  {
+    "name": "Portugal",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "PT",
+    "iso3": "PRT",
+    "dialingCode": "351",
+    "phoneNumber": "212345678"
+  },
+  {
+    "name": "Puerto Rico",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "PR",
+    "iso3": "PRI",
+    "dialingCode": "1",
+    "phoneNumber": "7872345678"
+  },
+  {
+    "name": "Qatar",
+    "currency": "Qatari riyal",
+    "currencyCode": "QAR",
+    "currencySymbol": "﷼",
+    "countryCode": "QA",
+    "iso3": "QAT",
+    "dialingCode": "974",
+    "phoneNumber": "44123456"
+  },
+  {
+    "name": "Reunion",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "RE",
+    "iso3": "REU",
+    "dialingCode": "262",
+    "phoneNumber": "262161234"
+  },
+  {
+    "name": "Romania",
+    "currency": "Romanian leu",
+    "currencyCode": "RON",
+    "currencySymbol": "lei",
+    "countryCode": "RO",
+    "iso3": "ROU",
+    "dialingCode": "40",
+    "phoneNumber": "211234567"
+  },
+  {
+    "name": "Russian Federation",
+    "currency": "Russian ruble",
+    "currencyCode": "RUB",
+    "currencySymbol": "₽",
+    "countryCode": "RU",
+    "iso3": "RUS",
+    "dialingCode": "7",
+    "phoneNumber": "3011234567"
+  },
+  {
+    "name": "Rwanda",
+    "currency": "Rwandan franc",
+    "currencyCode": "RWF",
+    "currencySymbol": "R₣",
+    "countryCode": "RW",
+    "iso3": "RWA",
+    "dialingCode": "250",
+    "phoneNumber": "250123456"
+  },
+  {
+    "name": "Saint Barthelemy",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "BL",
+    "iso3": "BLM",
+    "dialingCode": "590",
+    "phoneNumber": "590271234"
+  },
+  {
+    "name": "Saint Helena",
+    "currency": "Saint Helena pound",
+    "currencyCode": "SHP",
+    "currencySymbol": "£",
+    "countryCode": "SH",
+    "iso3": "SHN",
+    "dialingCode": "290",
+    "phoneNumber": "22158"
+  },
+  {
+    "name": "Saint Kitts And Nevis",
+    "currency": "Eastern Caribbean dollar",
+    "currencyCode": "XCD",
+    "currencySymbol": "$",
+    "countryCode": "KN",
+    "iso3": "KNA",
+    "dialingCode": "1869",
+    "phoneNumber": "2361234"
+  },
+  {
+    "name": "Saint Lucia",
+    "currency": "Eastern Caribbean dollar",
+    "currencyCode": "XCD",
+    "currencySymbol": "$",
+    "countryCode": "LC",
+    "iso3": "LCA",
+    "dialingCode": "1758",
+    "phoneNumber": "4305678"
+  },
+  {
+    "name": "Saint Pierre and Miquelon",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "PM",
+    "iso3": "SPM",
+    "dialingCode": "508",
+    "phoneNumber": "430123"
+  },
+  {
+    "name": "Saint Vincent And The Grenadines",
+    "currency": "Eastern Caribbean dollar",
+    "currencyCode": "XCD",
+    "currencySymbol": "$",
+    "countryCode": "VC",
+    "iso3": "VCT",
+    "dialingCode": "1784",
+    "phoneNumber": "2661234"
+  },
+  {
+    "name": "Saint Martin (French part)",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "MF",
+    "iso3": "MAF",
+    "dialingCode": "590",
+    "phoneNumber": "590271234"
+  },
+  {
+    "name": "Samoa",
+    "currency": "Samoan tālā",
+    "currencyCode": "WST",
+    "currencySymbol": "$",
+    "countryCode": "WS",
+    "iso3": "WSM",
+    "dialingCode": "685",
+    "phoneNumber": "22123"
+  },
+  {
+    "name": "San Marino",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "SM",
+    "iso3": "SMR",
+    "dialingCode": "378",
+    "phoneNumber": "0549886377"
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "currency": "Dobra",
+    "currencyCode": "STN",
+    "currencySymbol": "Db",
+    "countryCode": "ST",
+    "iso3": "STP",
+    "dialingCode": "239",
+    "phoneNumber": "2221234"
+  },
+  {
+    "name": "Saudi Arabia",
+    "currency": "Saudi riyal",
+    "currencyCode": "SAR",
+    "currencySymbol": "﷼",
+    "countryCode": "SA",
+    "iso3": "SAU",
+    "dialingCode": "966",
+    "phoneNumber": "112345678"
+  },
+  {
+    "name": "Senegal",
+    "currency": "West African CFA franc",
+    "currencyCode": "XOF",
+    "currencySymbol": "CFA",
+    "countryCode": "SN",
+    "iso3": "SEN",
+    "dialingCode": "221",
+    "phoneNumber": "301012345"
+  },
+  {
+    "name": "Serbia",
+    "currency": "Serbian dinar",
+    "currencyCode": "RSD",
+    "currencySymbol": "din",
+    "countryCode": "RS",
+    "iso3": "SRB",
+    "dialingCode": "381",
+    "phoneNumber": "10234567"
+  },
+  {
+    "name": "Seychelles",
+    "currency": "Seychellois rupee",
+    "currencyCode": "SCR",
+    "currencySymbol": "SRe",
+    "countryCode": "SC",
+    "iso3": "SYC",
+    "dialingCode": "248",
+    "phoneNumber": "4217123"
+  },
+  {
+    "name": "Sierra Leone",
+    "currency": "Sierra Leonean leone",
+    "currencyCode": "SLL",
+    "currencySymbol": "Le",
+    "countryCode": "SL",
+    "iso3": "SLL",
+    "dialingCode": "232",
+    "phoneNumber": "22221234"
+  },
+  {
+    "name": "Singapore",
+    "currency": "Singapore dollar",
+    "currencyCode": "SGD",
+    "currencySymbol": "$",
+    "countryCode": "SG",
+    "iso3": "SGP",
+    "dialingCode": "65",
+    "phoneNumber": "61234567"
+  },
+  {
+    "name": "Sint Maarten (Dutch part)",
+    "currency": "Netherlands Antillean guilder",
+    "currencyCode": "ANG",
+    "currencySymbol": "ƒ",
+    "countryCode": "SX",
+    "iso3": "SXM",
+    "dialingCode": "1721",
+    "phoneNumber": "5425678"
+  },
+  {
+    "name": "Slovakia",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "SK",
+    "iso3": "SVK",
+    "dialingCode": "421",
+    "phoneNumber": "221234567"
+  },
+  {
+    "name": "Slovenia",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "SI",
+    "iso3": "SVN",
+    "dialingCode": "386",
+    "phoneNumber": "12345678"
+  },
+  {
+    "name": "Solomon Islands",
+    "currency": "Solomon Islands dollar",
+    "currencyCode": "SBD",
+    "currencySymbol": "$",
+    "countryCode": "SB",
+    "iso3": "SLB",
+    "dialingCode": "677",
+    "phoneNumber": "40123"
+  },
+  {
+    "name": "Somalia",
+    "currency": "Somali shilling",
+    "currencyCode": "SOS",
+    "currencySymbol": "Sh.so.",
+    "countryCode": "SO",
+    "iso3": "SOM",
+    "dialingCode": "252",
+    "phoneNumber": "4012345"
+  },
+  {
+    "name": "South Africa",
+    "currency": "South African rand",
+    "currencyCode": "ZAR",
+    "currencySymbol": "R",
+    "countryCode": "ZA",
+    "iso3": "ZAF",
+    "dialingCode": "27",
+    "phoneNumber": "101234567"
+  },
+  {
+    "name": "South Georgia and the South Sandwich Islands",
+    "currency": "Pound sterling",
+    "currencyCode": "GBP",
+    "currencySymbol": "£",
+    "countryCode": "GS",
+    "iso3": "SGS",
+    "dialingCode": "500"
+  },
+  {
+    "name": "South Sudan",
+    "currency": "South Sudanese pound",
+    "currencyCode": "SSP",
+    "currencySymbol": "£",
+    "countryCode": "SS",
+    "iso3": "SSD",
+    "dialingCode": "211",
+    "phoneNumber": "181234567"
+  },
+  {
+    "name": "Spain",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "ES",
+    "iso3": "ESP",
+    "dialingCode": "34",
+    "phoneNumber": "810123456"
+  },
+  {
+    "name": "Sri Lanka",
+    "currency": "Sri Lankan rupee",
+    "currencyCode": "LKR",
+    "currencySymbol": "Rs",
+    "countryCode": "LK",
+    "iso3": "LKA",
+    "dialingCode": "94",
+    "phoneNumber": "112345678"
+  },
+  {
+    "name": "Sudan",
+    "currency": "Sudanese pound",
+    "currencyCode": "SDG",
+    "currencySymbol": "LS",
+    "countryCode": "SD",
+    "iso3": "SDN",
+    "dialingCode": "249",
+    "phoneNumber": "153123456"
+  },
+  {
+    "name": "Suriname",
+    "currency": "Surinamese dollar",
+    "currencyCode": "SRD",
+    "currencySymbol": "$",
+    "countryCode": "SR",
+    "iso3": "SUR",
+    "dialingCode": "597",
+    "phoneNumber": "211234"
+  },
+  {
+    "name": "Svalbard And Jan Mayen",
+    "currency": "Norwegian Krone",
+    "currencyCode": "NOK",
+    "currencySymbol": "kr",
+    "countryCode": "SJ",
+    "iso3": "SJM",
+    "dialingCode": "47",
+    "phoneNumber": "79123456"
+  },
+  {
+    "name": "Sweden",
+    "currency": "Swedish krona",
+    "currencyCode": "SEK",
+    "currencySymbol": "kr",
+    "countryCode": "SE",
+    "iso3": "SWE",
+    "dialingCode": "46",
+    "phoneNumber": "8123456"
+  },
+  {
+    "name": "Switzerland",
+    "currency": "Swiss franc",
+    "currencyCode": "CHF",
+    "currencySymbol": "CHf",
+    "countryCode": "CH",
+    "iso3": "CHE",
+    "dialingCode": "41",
+    "phoneNumber": "212345678"
+  },
+  {
+    "name": "Syrian Arab Republic",
+    "currency": "Syrian pound",
+    "currencyCode": "SYP",
+    "currencySymbol": "£",
+    "countryCode": "SY",
+    "iso3": "SYR",
+    "dialingCode": "963",
+    "phoneNumber": "112345678"
+  },
+  {
+    "name": "Taiwan",
+    "currency": "New Taiwan dollar",
+    "currencyCode": "TWD",
+    "currencySymbol": "NT$",
+    "countryCode": "TW",
+    "iso3": "TWN",
+    "dialingCode": "886",
+    "phoneNumber": "221234567"
+  },
+  {
+    "name": "Tajikistan",
+    "currency": "Tajikistani somoni",
+    "currencyCode": "TJS",
+    "currencySymbol": "SM",
+    "countryCode": "TJ",
+    "iso3": "TJK",
+    "dialingCode": "992",
+    "phoneNumber": "372123456"
+  },
+  {
+    "name": "Tanzania",
+    "currency": "Tanzanian shilling",
+    "currencyCode": "TZS",
+    "currencySymbol": "TSh",
+    "countryCode": "TZ",
+    "iso3": "TZA",
+    "dialingCode": "255",
+    "phoneNumber": "222345678"
+  },
+  {
+    "name": "Thailand",
+    "currency": "Thai baht",
+    "currencyCode": "THB",
+    "currencySymbol": "฿",
+    "countryCode": "TH",
+    "iso3": "THA",
+    "dialingCode": "66",
+    "phoneNumber": "21234567"
+  },
+  {
+    "name": "Timor-Leste",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "TL",
+    "iso3": "TLS",
+    "dialingCode": "670",
+    "phoneNumber": "2112345"
+  },
+  {
+    "name": "Togo",
+    "currency": "West African CFA franc",
+    "currencyCode": "XOF",
+    "currencySymbol": "CFA",
+    "countryCode": "TG",
+    "iso3": "TGO",
+    "dialingCode": "228",
+    "phoneNumber": "22212345"
+  },
+  {
+    "name": "Tokelau",
+    "currency": "New Zealand dollar",
+    "currencyCode": "NZD",
+    "currencySymbol": "$",
+    "countryCode": "TK",
+    "iso3": "TKL",
+    "dialingCode": "690",
+    "phoneNumber": "3101"
+  },
+  {
+    "name": "Tonga",
+    "currency": "Tongan paʻanga",
+    "currencyCode": "TOP",
+    "currencySymbol": "T$",
+    "countryCode": "TO",
+    "iso3": "TON",
+    "dialingCode": "676",
+    "phoneNumber": "20123"
+  },
+  {
+    "name": "Trinidad And Tobago",
+    "currency": "Trinidad and Tobago dollar",
+    "currencyCode": "TTD",
+    "currencySymbol": "$",
+    "countryCode": "TT",
+    "iso3": "TTO",
+    "dialingCode": "1868",
+    "phoneNumber": "2211234"
+  },
+  {
+    "name": "Tunisia",
+    "currency": "Tunisian dinar",
+    "currencyCode": "TND",
+    "currencySymbol": "د.ت",
+    "countryCode": "TN",
+    "iso3": "TUN",
+    "dialingCode": "216",
+    "phoneNumber": "30010123"
+  },
+  {
+    "name": "Turkey",
+    "currency": "Turkish lira",
+    "currencyCode": "TRY",
+    "currencySymbol": "TL",
+    "countryCode": "TR",
+    "iso3": "TUR",
+    "dialingCode": "90",
+    "phoneNumber": "2123456789"
+  },
+  {
+    "name": "Turkmenistan",
+    "currency": "Turkmenistan manat",
+    "currencyCode": "TMT",
+    "currencySymbol": "₺",
+    "countryCode": "TM",
+    "iso3": "TKM",
+    "dialingCode": "993",
+    "phoneNumber": "12345678"
+  },
+  {
+    "name": "Turks And Caicos Islands",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "TC",
+    "iso3": "TCA",
+    "dialingCode": "1649",
+    "phoneNumber": "7121234"
+  },
+  {
+    "name": "Tuvalu",
+    "currency": "Australian dollar",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "countryCode": "TV",
+    "iso3": "TUV",
+    "dialingCode": "688",
+    "phoneNumber": "20123"
+  },
+  {
+    "name": "Uganda",
+    "currency": "Ugandan shilling",
+    "currencyCode": "UGX",
+    "currencySymbol": "USh",
+    "countryCode": "UG",
+    "iso3": "UGA",
+    "dialingCode": "256",
+    "phoneNumber": "312345678"
+  },
+  {
+    "name": "Ukraine",
+    "currency": "Ukrainian hryvnia",
+    "currencyCode": "UAH",
+    "currencySymbol": "₴",
+    "countryCode": "UA",
+    "iso3": "UKR",
+    "dialingCode": "380",
+    "phoneNumber": "311234567"
+  },
+  {
+    "name": "United Arab Emirates",
+    "currency": "United Arab Emirates dirham",
+    "currencyCode": "AED",
+    "currencySymbol": "إ.د",
+    "countryCode": "AE",
+    "iso3": "ARE",
+    "dialingCode": "971",
+    "phoneNumber": "22345678"
+  },
+  {
+    "name": "United Kingdom",
+    "currency": "British pound",
+    "currencyCode": "GBP",
+    "currencySymbol": "£",
+    "countryCode": "GB",
+    "iso3": "GBR",
+    "dialingCode": "44",
+    "phoneNumber": "1212345678"
+  },
+  {
+    "name": "United States",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "US",
+    "iso3": "USA",
+    "dialingCode": "1",
+    "phoneNumber": "2015550123"
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "UM",
+    "iso3": "UMI",
+    "dialingCode": "1"
+  },
+  {
+    "name": "Uruguay",
+    "currency": "Uruguayan peso",
+    "currencyCode": "UYU",
+    "currencySymbol": "$",
+    "countryCode": "UY",
+    "iso3": "URY",
+    "dialingCode": "598",
+    "phoneNumber": "21231234"
+  },
+  {
+    "name": "Uzbekistan",
+    "currency": "Uzbekistani soʻm",
+    "currencyCode": "UZS",
+    "currencySymbol": "лв",
+    "countryCode": "UZ",
+    "iso3": "UZB",
+    "dialingCode": "998",
+    "phoneNumber": "669050123"
+  },
+  {
+    "name": "Vanuatu",
+    "currency": "Vanuatu vatu",
+    "currencyCode": "VUV",
+    "currencySymbol": "VT",
+    "countryCode": "VU",
+    "iso3": "VUT",
+    "dialingCode": "678",
+    "phoneNumber": "22123"
+  },
+  {
+    "name": "Venezuela",
+    "currency": "Bolívar",
+    "currencyCode": "VEF",
+    "currencySymbol": "Bs.",
+    "countryCode": "VE",
+    "iso3": "VEN",
+    "dialingCode": "58",
+    "phoneNumber": "2121234567"
+  },
+  {
+    "name": "Vietnam",
+    "currency": "Vietnamese đồng",
+    "currencyCode": "VND",
+    "currencySymbol": "₫",
+    "countryCode": "VN",
+    "iso3": "VNM",
+    "dialingCode": "84",
+    "phoneNumber": "2101234567"
+  },
+  {
+    "name": "Virgin Islands (British)",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "VG",
+    "iso3": "VGB",
+    "dialingCode": "1284",
+    "phoneNumber": "2291234"
+  },
+  {
+    "name": "Virgin Islands (US)",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "VI",
+    "iso3": "VIR",
+    "dialingCode": "1340",
+    "phoneNumber": "6421234"
+  },
+  {
+    "name": "Wallis And Futuna",
+    "currency": "CFP franc",
+    "currencyCode": "XPF",
+    "currencySymbol": "₣",
+    "countryCode": "WF",
+    "iso3": "WLF",
+    "dialingCode": "681",
+    "phoneNumber": "721234"
+  },
+  {
+    "name": "Western Sahara",
+    "currency": "Moroccan Dirham",
+    "currencyCode": "MAD",
+    "currencySymbol": "MAD",
+    "countryCode": "EH",
+    "iso3": "ESH",
+    "dialingCode": "212",
+    "phoneNumber": "528812345"
+  },
+  {
+    "name": "Yemen",
+    "currency": "Yemeni rial",
+    "currencyCode": "YER",
+    "currencySymbol": "﷼",
+    "countryCode": "YE",
+    "iso3": "YEM",
+    "dialingCode": "967",
+    "phoneNumber": "1234567"
+  },
+  {
+    "name": "Zambia",
+    "currency": "Zambian kwacha",
+    "currencyCode": "ZMW",
+    "currencySymbol": "ZK",
+    "countryCode": "ZM",
+    "iso3": "ZMB",
+    "dialingCode": "260",
+    "phoneNumber": "211234567"
+  },
+  {
+    "name": "Zimbabwe",
+    "currency": "Zimbabwe Dollar",
+    "currencyCode": "ZWL",
+    "currencySymbol": "$",
+    "countryCode": "ZW",
+    "iso3": "ZWE",
+    "dialingCode": "263",
+    "phoneNumber": "1312345"
+  }
+]
