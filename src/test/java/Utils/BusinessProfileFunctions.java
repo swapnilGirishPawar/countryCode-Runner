@@ -11,14 +11,15 @@ public class BusinessProfileFunctions extends CommonUtils{
         System.out.println("Navigating to Business Profile");
         tapOnElement("iOSBottomNavBar.settings", "Settings");
         tapOnElement("iOSSettings.yourBrand", "Your Brand");
+    }
+
+    public void UpdateCountry() throws Throwable {
         tapOnElement("iOSYourBrand.editIcon", "Edit Icon");
         tapOnElement("iOSYourBrand.Country", "Country");
         tapOnElement("iOSYourBrand.countrySearchBar", "Search Bar");
         type("iOSYourBrand.countrySearchBar", CountryVal, "Search Bar");
-         SearchedCountries = GetListOfSearchedCountries();
-
-
-         tapOnElement("iOSYourBrand.Save", "Save Button");
-
+        SearchedCountries = GetListOfSearchedCountries();
+        tapOnElement("iOSYourBrand.Save", "Save Button");
     }
+
 }
