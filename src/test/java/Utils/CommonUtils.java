@@ -26,8 +26,6 @@ public class CommonUtils {
     public static Properties Prop;
     public static WebDriverWait wait;
     public static String LocatorPropertiesFile = "./src/test/resources/iOSLocators.properties";
-    public static String AppConfigFilePath = "./src/test/resources/app.properties";
-    public static String LocatorPropertiesFile3 = "./src/test/resources/Login.properties";
 
     public static String ReadProperties(String Property, String Location) throws Throwable {
         Prop = new Properties();
@@ -39,6 +37,16 @@ public class CommonUtils {
 
     public static void tapOnElement(String element, String elementName, AppiumDriver driver) throws Throwable {
         String Locator = ReadProperties(element, LocatorPropertiesFile);
+        WebElement value = StringToElementConverter(Locator, driver);
+        if (value == null) {
+            System.out.println("failed");
+        } else {
+            value.click();
+            System.out.println(("Clicked on [" + elementName + "]"));
+        }
+    }
+    public static void tapOnElement2(String element, String elementName, AppiumDriver driver) throws Throwable {
+        String Locator = element;
         WebElement value = StringToElementConverter(Locator, driver);
         if (value == null) {
             System.out.println("failed");
@@ -118,9 +126,6 @@ public class CommonUtils {
         }
     }
 
-    public static String credential(String credentialType) throws Throwable {
-        return ReadProperties(credentialType, LocatorPropertiesFile3);
-    }
 
     public static WebElement visibilityOfElement(String element, IOSDriver driver) throws Throwable {
         String Locator = ReadProperties(element, LocatorPropertiesFile);

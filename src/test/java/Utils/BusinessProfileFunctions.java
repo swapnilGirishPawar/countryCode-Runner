@@ -45,7 +45,7 @@ public class BusinessProfileFunctions extends Capabilities {
 
     public void navigateFromBusinessProfileToCustomerTab(AppiumDriver driver) throws Throwable {
         System.out.println("Navigating from Business Profile to Customer Creation");
-        tapOnElement("common.backButton1", "your brand back button", driver);
+        tapOnElement2("xpath$//XCUIElementTypeButton[@name=\"anywhere_back\"]", "your brand back button", driver);
         tapOnElement("iOSBottomNavBar.Customers", "Customers tab", driver);
     }
 
@@ -67,7 +67,7 @@ public class BusinessProfileFunctions extends Capabilities {
             navigateFromBusinessProfileToCustomerTab(driver);
 
             // customer creation flow
-
+            System.out.println("customer create flow completed");
 
             // navigate back to business Profile
             NavigateToBusinessProfile(driver);
