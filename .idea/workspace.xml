@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="badddd38-441b-45c1-b541-e1254f5601de" name="Changes" comment="Commit 3[Customer Create]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass/Capabilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseClass/Capabilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/iOSCustomerCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/iOSCustomerCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/iOSLocators.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/iOSLocators.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/BusinessProfileFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/BusinessProfileFunctions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="SudhansuMerge2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +56,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml.executor": "Run",
     "TestNG.AndroidBusinessProfile (1).executor": "Run",
     "TestNG.AndroidBusinessProfile (2).executor": "Run",
     "TestNG.AndroidBusinessProfile.executor": "Run",
@@ -67,7 +69,7 @@
     "TestNG.iOSCustomerCreate (5).executor": "Run",
     "TestNG.iOSCustomerCreate.executor": "Run",
     "TestNG.iOSCustomerCreate.testCustomerCreate.executor": "Run",
-    "git-widget-placeholder": "customerCreate",
+    "git-widget-placeholder": "SudhansuMerge1",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -78,7 +80,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.iOSCustomerCreate (3)">
+  <component name="RunManager" selected="TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,17 +92,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AndroidBusinessProfile" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="countryCode-Runner" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AndroidBusinessProfile" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/iOS.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -175,31 +170,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="iOSCustomerCreate.testCustomerCreate" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="countryCode-Runner" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
-      <option name="METHOD_NAME" value="testCustomerCreate" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml" />
         <item itemvalue="TestNG.iOSCustomerCreate (3)" />
         <item itemvalue="TestNG.iOSCustomerCreate" />
         <item itemvalue="TestNG.iOSCustomerCreate (2)" />
         <item itemvalue="TestNG.iOSCustomerCreate (1)" />
-        <item itemvalue="TestNG.iOSCustomerCreate.testCustomerCreate" />
       </list>
     </recent_temporary>
   </component>

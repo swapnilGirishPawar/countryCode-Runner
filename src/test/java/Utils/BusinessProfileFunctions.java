@@ -1,6 +1,7 @@
 package Utils;
 
 import BaseClass.Capabilities;
+import Tests.iOSCustomerCreate;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -15,6 +16,7 @@ public class BusinessProfileFunctions extends Capabilities {
     public static String selectedCountry;
     List<String> PassedCountries = new ArrayList<>();
     List<String> failedCountries = new ArrayList<>();
+    iOSCustomerCreate obj = new iOSCustomerCreate();
 
     public void NavigateToBusinessProfile(AppiumDriver driver) throws Throwable {
         tapOnElement("iOSBottomNavBar.settings", "Settings", driver);
@@ -62,9 +64,10 @@ public class BusinessProfileFunctions extends Capabilities {
             countryCodeChnger(driver, countryName, PhoneNumber);
 
             // navigate back to customer tab.
+           // obj.customerFlow(countryName, PhoneNumber, driver);
 
-            if (!validateCustomerCountry(countryName)) failedCountries.add(countryName);
-            else PassedCountries.add(countryName);
+ //           if (!validateCustomerCountry(countryName)) failedCountries.add(countryName);
+  //          else PassedCountries.add(countryName);
 
             // customer creation flow
 

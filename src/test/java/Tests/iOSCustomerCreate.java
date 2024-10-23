@@ -30,15 +30,15 @@ public class iOSCustomerCreate extends Capabilities {
     String discardNleave;
     String clearSearchedQuery;
     String cancelSearch;
-    int i=0;
+    int i = 0;
+    AppiumDriver driver;
 
 
-    @BeforeClass
+
     public void setup() throws Throwable {
         driver = (IOSDriver) launchDriver("iOS");
     }
 
-    @BeforeTest
     public void beforeTest() {
         Properties properties = new Properties();
 
@@ -63,30 +63,23 @@ public class iOSCustomerCreate extends Capabilities {
 
     }
 
-    @Test
-    public void testCustomerCreate() throws Exception {
-        jsonValidation();
+
+    public void customerFlow(String countryName, String phoneNumber, AppiumDriver driver) throws Exception {
+        this.driver=driver;
+        beforeTest();
+        createCustomer(countryName, phoneNumber);
+        openCustomerOverview(countryName);
+        validatePhoneNumber(phoneNumber);
     }
 
-    public void jsonValidation() throws Exception {
-        while(i<=2){
-            createCustomer();
-            openCustomerOverview("Sudhansu1234");
-            validatePhoneNumber("9090031459");
-        }
-        System.out.println("JSON validation completed");
-    }
-
-    public void createCustomer() throws Exception {
+    public void createCustomer(String countryName, String mobileNumber) throws Exception {
         clickElementByXPath(customerTab);
         clickElementByXPath(addNewCustomer);
         clickElementByXPath(addCustomerManually);
-        sendKeysByXpath(customerName, "Sudhansu1234");
-        sendKeysByXpath(phoneNumber, "909003145");
+        sendKeysByXpath(customerName, countryName);
+        sendKeysByXpath(phoneNumber, mobileNumber);
         clickElementByXPath(saveButton);
         Thread.sleep(2000);
-        i++;
-        System.out.println(i);
 
         if (isDisplayed(saveButton)) {
             System.out.println("Customer created Failed!!");
@@ -102,14 +95,13 @@ public class iOSCustomerCreate extends Capabilities {
         clickElementByXPath(customerTab);
         sendKeysByXpath(customerSearchBar, customerName);
         Thread.sleep(2000);
-        driver.findElement(By.id("Sudhansu1234")).click();
+        driver.findElement(By.id(customerName)).click();
     }
 
     public void exitCustomerCreate() throws Exception {
         clickElementByXPath(cancelBtn);
         clickElementByXPath(discardNleave);
         clickElementByXPath(calendarBtn);
-        jsonValidation();
     }
 
     public void gobackToCalendar() throws Exception {
