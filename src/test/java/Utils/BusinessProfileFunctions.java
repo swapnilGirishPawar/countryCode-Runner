@@ -7,9 +7,14 @@ import com.google.gson.JsonParser;
 import io.appium.java_client.AppiumDriver;
 
 import java.io.FileReader;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BusinessProfileFunctions extends Capabilities {
     public static String selectedCountry;
+    List<String> PassedCountries = new ArrayList<>();
+    List<String> failedCountries = new ArrayList<>();
 
     public void NavigateToBusinessProfile(AppiumDriver driver) throws Throwable {
         tapOnElement("iOSBottomNavBar.settings", "Settings", driver);
@@ -24,7 +29,7 @@ public class BusinessProfileFunctions extends Capabilities {
         Thread.sleep(2000);
         selectedCountry = SelectProperCountry(countryName, driver);
         if(!validateString(countryName, selectedCountry)){
-            System.out.println("Country Name from JSON and Selected Country is not matching");
+
         }
         else {
             System.out.println("Selected country matched with country value from JSON");
@@ -51,16 +56,26 @@ public class BusinessProfileFunctions extends Capabilities {
             JsonObject countryObj = countries.get(i).getAsJsonObject();
             String countryName = countryObj.get("name").getAsString();
             String PhoneNumber = countryObj.get("phoneNumber").getAsString();
+            System.out.println("Country under test - " + countryName);
 
             // Update the value in business Profile
             countryCodeChnger(driver, countryName, PhoneNumber);
 
             // navigate back to customer tab.
 
+            if (!validateCustomerCountry(countryName)) failedCountries.add(countryName);
+            else PassedCountries.add(countryName);
+
             // customer creation flow
 
             // navigate back to business Profile
 
+        }
+
+        if (failedCountries.isEmpty()) {
+            System.out.println("All countries matched successfully!");
+        } else {
+            System.out.println("Countries that failed to match: " + failedCountries);
         }
     }
 

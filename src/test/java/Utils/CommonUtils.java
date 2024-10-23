@@ -54,7 +54,6 @@ public class CommonUtils {
         if (value != null) {
             value.clear();
             value.sendKeys(input);
-            System.out.println(("Typed [" + input + "] on the " + elementName));
         } else {
             System.out.println("failed in type method");
         }
