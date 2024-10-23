@@ -37,15 +37,15 @@ public class Capabilities extends CommonUtils {
         capabilities.setCapability("appium:appWaitForLaunch", true);
 
         if ("Android".equalsIgnoreCase(platform)) {
-            capabilities.setCapability("deviceName", "emulator-5554");
-            capabilities.setCapability("platformVersion", "13");
+            capabilities.setCapability("deviceName", "RZ8T31C2GFH");
+            capabilities.setCapability("platformVersion", "14");
             capabilities.setCapability("appium:automationName", "uiautomator2");
             capabilities.setCapability("appium:platformName", "Android");
             capabilities.setCapability("appium:appPackage", "com.adaptavant.setmore");
             capabilities.setCapability("appium:appActivity", "com.anywhere.container.presentation.ui.MainActivity");
         } else if ("iOS".equalsIgnoreCase(platform)) {
-            capabilities.setCapability("deviceName", "Sudhansu phone");
-            capabilities.setCapability("platformVersion", "17.5");
+            capabilities.setCapability("deviceName", "iPhone 16 Pro Max");
+            capabilities.setCapability("platformVersion", "18.0");
             capabilities.setCapability("appium:automationName", "XCUITest");
             capabilities.setCapability("appium:platformName", "iOS");
             capabilities.setCapability("appium:bundleId", "com.setmore.app");
