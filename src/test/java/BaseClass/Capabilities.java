@@ -32,7 +32,7 @@ public class Capabilities extends CommonUtils {
 
     private DesiredCapabilities getCapabilities(String platform) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("appium:autoAcceptAlerts", true);
+        capabilities.setCapability("appium:autoAcceptAlerts", false);
         capabilities.setCapability("noReset", true);
         capabilities.setCapability("appium:appWaitForLaunch", true);
 

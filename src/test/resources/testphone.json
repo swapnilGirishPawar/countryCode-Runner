@@ -7,46 +7,6 @@
     "countryCode": "AF",
     "iso3": "AFG",
     "dialingCode": "93",
-    "phoneNumber": "234567890"
-  },
-  {
-    "name": "Aland Islands",
-    "currency": "Euro",
-    "currencyCode": "EUR",
-    "currencySymbol": "€",
-    "countryCode": "AX",
-    "iso3": "ALA",
-    "dialingCode": "358",
-    "phoneNumber": "181234567"
-  },
-  {
-    "name": "Albania",
-    "currency": "Albanian lek",
-    "currencyCode": "ALL",
-    "currencySymbol": "Lek",
-    "countryCode": "AL",
-    "iso3": "ALB",
-    "dialingCode": "355",
-    "phoneNumber": "22345678"
-  },
-  {
-    "name": "Algeria",
-    "currency": "Algerian dinar",
-    "currencyCode": "DZD",
-    "currencySymbol": "دج",
-    "countryCode": "DZ",
-    "iso3": "DZA",
-    "dialingCode": "213",
-    "phoneNumber": "12345678"
-  },
-  {
-    "name": "American Samoa",
-    "currency": "US Dollar",
-    "currencyCode": "USD",
-    "currencySymbol": "$",
-    "countryCode": "AS",
-    "iso3": "ASM",
-    "dialingCode": "1684",
-    "phoneNumber": "6221234"
+    "phoneNumber": "1234"
   }
 ]

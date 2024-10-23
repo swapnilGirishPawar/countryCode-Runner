@@ -72,11 +72,11 @@ public class BusinessProfileFunctions extends Capabilities {
             navigateFromBusinessProfileToCustomerTab(driver);
 
             // customer creation flow
-            obj.customerFlow(countryName, PhoneNumber,dialingCode, driver);
+            String FailedCountry = obj.customerFlow(countryName, PhoneNumber,dialingCode, driver);
 
- //           if (!validateCustomerCountry(countryName)) failedCountries.add(countryName);
-  //          else PassedCountries.add(countryName);
-
+            if(FailedCountry!=null){
+                failedCountries.add(FailedCountry);
+            }
 
             // navigate back to business Profile
             NavigateToBusinessProfile(driver);

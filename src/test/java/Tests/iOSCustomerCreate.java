@@ -63,14 +63,16 @@ public class iOSCustomerCreate extends Capabilities {
     }
 
 
-    public void customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Throwable {
+    public String customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Throwable {
         beforeTest();
-        createCustomer(countryName, phoneNumber);
+        String FailedCountry = createCustomer(countryName, phoneNumber);
         openCustomerOverview(countryName);
         validatePhoneNumber(driver, dialingCode, phoneNumber);
+        return FailedCountry;
+
     }
 
-    public void createCustomer(String countryName, String mobileNumber) throws Exception {
+    public String createCustomer(String countryName, String mobileNumber) throws Exception {
         clickElementByXPath(customerTab);
         clickElementByXPath(addNewCustomer);
         clickElementByXPath(addCustomerManually);
@@ -82,11 +84,12 @@ public class iOSCustomerCreate extends Capabilities {
         if (isDisplayed(saveButton)) {
             System.out.println("Customer created Failed!!");
             exitCustomerCreate();
+            return countryName;
         } else {
             System.out.println("Customer created Successfully!!");
             gobackToCalendar();
         }
-
+        return null;
     }
 
     public void openCustomerOverview(String customerName) throws Exception {
@@ -113,11 +116,18 @@ public class iOSCustomerCreate extends Capabilities {
         if(phoneNumberOverView.equalsIgnoreCase(FullNumber)){
 //        if (isDisplayed("//XCUIElementTypeButton[@name=\"" + FullNumber + "\"]")) {
             System.out.println("Phone number is correct");
+            // delete customer
+            delete(driver);
         } else {
             System.out.println(FullNumber);
             System.out.println("Phone number is incorrect");
         }
         clearTheSearchedQuery();
+    }
+    public void delete(AppiumDriver driver) throws Throwable {
+        tapOnElement("Booking.threeDotsEventButton", "Three dots in the overview page", driver);
+        tapOnElement("Booking.deleteEventButton", "Delete button", driver);
+        tapOnElement("Booking.confirmDeleteEventButton", "Delete -confirmation popup button", driver);
     }
     public String getTextOfElement(AppiumDriver driver, String element) throws Throwable {
         String Locator = ReadProperties(element, LocatorPropertiesFile);
@@ -153,8 +163,8 @@ public class iOSCustomerCreate extends Capabilities {
     }
 
     public void clearTheSearchedQuery() throws Exception {
-        clickElementByXPath(backBtn);
-        clickElementByXPath(clearSearchedQuery);
+//        clickElementByXPath(backBtn);
+//        clickElementByXPath(clearSearchedQuery);
         Thread.sleep(1000);
         clickElementByXPath(cancelSearch);
         clickElementByXPath(calendarBtn);
