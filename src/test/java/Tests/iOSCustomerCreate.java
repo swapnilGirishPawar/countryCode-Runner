@@ -5,6 +5,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
@@ -62,11 +63,11 @@ public class iOSCustomerCreate extends Capabilities {
     }
 
 
-    public void customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Exception {
+    public void customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Throwable {
         beforeTest();
         createCustomer(countryName, phoneNumber);
         openCustomerOverview(countryName);
-        validatePhoneNumber(dialingCode, phoneNumber);
+        validatePhoneNumber(driver, dialingCode, phoneNumber);
     }
 
     public void createCustomer(String countryName, String mobileNumber) throws Exception {
@@ -106,14 +107,23 @@ public class iOSCustomerCreate extends Capabilities {
         clickElementByXPath(calendarBtn);
     }
 
-    public void validatePhoneNumber(String dialingCode, String phoneNumber) throws Exception {
-        String FullNumber = dialingCode + phoneNumber;
-        if (isDisplayed("//XCUIElementTypeButton[@name=\"+" + FullNumber + "\"]")) {
+    public void validatePhoneNumber(AppiumDriver driver, String dialingCode, String phoneNumber) throws Throwable {
+        String FullNumber = "+" +dialingCode + phoneNumber;
+        String phoneNumberOverView = getTextOfElement(driver, "General.phoneNumberOverview").replaceAll("\\s", "");
+        if(phoneNumberOverView.equalsIgnoreCase(FullNumber)){
+//        if (isDisplayed("//XCUIElementTypeButton[@name=\"" + FullNumber + "\"]")) {
             System.out.println("Phone number is correct");
         } else {
+            System.out.println(FullNumber);
             System.out.println("Phone number is incorrect");
         }
         clearTheSearchedQuery();
+    }
+    public String getTextOfElement(AppiumDriver driver, String element) throws Throwable {
+        String Locator = ReadProperties(element, LocatorPropertiesFile);
+        WebElement value = StringToElementConverter(Locator, driver);
+        return value.getText();
+
     }
 
     public void clickElementByXPath(String xpath) throws Exception {
