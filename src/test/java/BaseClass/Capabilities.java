@@ -44,8 +44,8 @@ public class Capabilities extends CommonUtils {
             capabilities.setCapability("appium:appPackage", "com.adaptavant.setmore");
             capabilities.setCapability("appium:appActivity", "com.anywhere.container.presentation.ui.MainActivity");
         } else if ("iOS".equalsIgnoreCase(platform)) {
-            capabilities.setCapability("deviceName", "Sudhansu phone");
-            capabilities.setCapability("platformVersion", "17.5");
+            capabilities.setCapability("deviceName", "iPhone 16 Pro Max");
+            capabilities.setCapability("platformVersion", "18.0");
             capabilities.setCapability("appium:automationName", "XCUITest");
             capabilities.setCapability("appium:platformName", "iOS");
             capabilities.setCapability("appium:bundleId", "com.setmore.app");

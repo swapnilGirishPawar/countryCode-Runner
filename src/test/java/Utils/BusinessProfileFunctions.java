@@ -6,6 +6,8 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import java.io.FileReader;
 import java.sql.SQLOutput;
@@ -31,10 +33,12 @@ public class BusinessProfileFunctions extends Capabilities {
         Thread.sleep(2000);
         selectedCountry = SelectProperCountry(countryName, driver);
         if(!validateString(countryName, selectedCountry)){
-
+            failedCountries.add(countryName);
         }
         else {
             System.out.println("Selected country matched with country value from JSON");
+            PassedCountries.add(countryName);
+
         }
         tapOnElement("iOSYourBrand.Save", "Save Button", driver);
     }
@@ -45,7 +49,8 @@ public class BusinessProfileFunctions extends Capabilities {
 
     public void navigateFromBusinessProfileToCustomerTab(AppiumDriver driver) throws Throwable {
         System.out.println("Navigating from Business Profile to Customer Creation");
-        tapOnElement2("xpath$//XCUIElementTypeButton[@name=\"anywhere_back\"]", "your brand back button", driver);
+        Thread.sleep(6000);
+        tapOnElement2("accessibilityid$anywhere_back", "your brand back button", driver);
         tapOnElement("iOSBottomNavBar.Customers", "Customers tab", driver);
     }
 
@@ -54,17 +59,19 @@ public class BusinessProfileFunctions extends Capabilities {
         JsonArray countries = readCountriesFromJson();
         NavigateToBusinessProfile(driver);
         for (int i = 0; i < countries.size(); i++) {
-            // get value from JSON
             JsonObject countryObj = countries.get(i).getAsJsonObject();
             String countryName = countryObj.get("name").getAsString();
             String PhoneNumber = countryObj.get("phoneNumber").getAsString();
+            String dialingCode = countryObj.get("dialingCode").getAsString();
             System.out.println("Country under test - " + countryName);
 
             // Update the value in business Profile
             countryCodeChnger(driver, countryName, PhoneNumber);
 
             // navigate back to customer tab.
-           // obj.customerFlow(countryName, PhoneNumber, driver);
+            navigateFromBusinessProfileToCustomerTab(driver);
+
+            obj.customerFlow(countryName, PhoneNumber,dialingCode, driver);
 
  //           if (!validateCustomerCountry(countryName)) failedCountries.add(countryName);
   //          else PassedCountries.add(countryName);

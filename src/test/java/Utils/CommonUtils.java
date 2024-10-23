@@ -81,7 +81,7 @@ public class CommonUtils {
         return null;
     }
 
-    private static WebElement StringToElementConverter(String locator, AppiumDriver driver) throws Exception {
+    protected static WebElement StringToElementConverter(String locator, AppiumDriver driver) throws Exception {
         String LocatorType = locator.split("\\$")[0];
         String LocatorValue = locator.split("\\$")[1];
         By elementLocation;

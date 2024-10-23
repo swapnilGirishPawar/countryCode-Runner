@@ -30,8 +30,6 @@ public class iOSCustomerCreate extends Capabilities {
     String discardNleave;
     String clearSearchedQuery;
     String cancelSearch;
-    int i = 0;
-    AppiumDriver driver;
 
 
 
@@ -64,12 +62,11 @@ public class iOSCustomerCreate extends Capabilities {
     }
 
 
-    public void customerFlow(String countryName, String phoneNumber, AppiumDriver driver) throws Exception {
-        this.driver=driver;
+    public void customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Exception {
         beforeTest();
         createCustomer(countryName, phoneNumber);
         openCustomerOverview(countryName);
-        validatePhoneNumber(phoneNumber);
+        validatePhoneNumber(dialingCode, phoneNumber);
     }
 
     public void createCustomer(String countryName, String mobileNumber) throws Exception {
@@ -109,8 +106,9 @@ public class iOSCustomerCreate extends Capabilities {
         clickElementByXPath(calendarBtn);
     }
 
-    public void validatePhoneNumber(String phoneNumber) throws Exception {
-        if (isDisplayed("//XCUIElementTypeButton[@name=\"+91" + phoneNumber + "\"]")) {
+    public void validatePhoneNumber(String dialingCode, String phoneNumber) throws Exception {
+        String FullNumber = dialingCode + phoneNumber;
+        if (isDisplayed("//XCUIElementTypeButton[@name=\"+" + FullNumber + "\"]")) {
             System.out.println("Phone number is correct");
         } else {
             System.out.println("Phone number is incorrect");
@@ -147,6 +145,7 @@ public class iOSCustomerCreate extends Capabilities {
     public void clearTheSearchedQuery() throws Exception {
         clickElementByXPath(backBtn);
         clickElementByXPath(clearSearchedQuery);
+        Thread.sleep(1000);
         clickElementByXPath(cancelSearch);
         clickElementByXPath(calendarBtn);
     }
