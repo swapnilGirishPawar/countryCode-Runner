@@ -66,8 +66,10 @@ public class iOSCustomerCreate extends Capabilities {
     public String customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Throwable {
         beforeTest();
         String FailedCountry = createCustomer(countryName, phoneNumber);
-        openCustomerOverview(countryName);
-        validatePhoneNumber(driver, dialingCode, phoneNumber);
+        if(FailedCountry == null){
+            openCustomerOverview(countryName);
+            validatePhoneNumber(driver, dialingCode, phoneNumber);
+        }
         return FailedCountry;
 
     }
@@ -127,7 +129,8 @@ public class iOSCustomerCreate extends Capabilities {
     public void delete(AppiumDriver driver) throws Throwable {
         tapOnElement("Booking.threeDotsEventButton", "Three dots in the overview page", driver);
         tapOnElement("Booking.deleteEventButton", "Delete button", driver);
-        tapOnElement("Booking.confirmDeleteEventButton", "Delete -confirmation popup button", driver);
+        tapOnElement("Booking.deletecustomerName", "Got it button", driver);
+        tapOnElement("Booking.finalConfirm", "Delete -confirmation popup button", driver);
     }
     public String getTextOfElement(AppiumDriver driver, String element) throws Throwable {
         String Locator = ReadProperties(element, LocatorPropertiesFile);
