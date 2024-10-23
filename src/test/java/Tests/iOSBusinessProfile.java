@@ -2,6 +2,8 @@ package Tests;
 
 import Utils.BusinessProfileFunctions;
 import Utils.LoginFunctions;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import io.appium.java_client.ios.IOSDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -23,17 +25,10 @@ public class iOSBusinessProfile extends BusinessProfileFunctions {
 
     @Test
     public void testBusinessProfile() throws Throwable {
-//        login.emailLogin(driver);
         System.out.println("Business Profile test");
-        NavigateToBusinessProfile(driver);
-        UpdateCountry(driver);
+        looper(driver);
+//        navigateFromBusinessProfileToCustomerTab(driver);
     }
-
-//    @Test
-//    public void BusinessProfileUpdate() throws Throwable {
-//        NavigateToBusinessProfile();
-//        UpdateCountry();
-//    }
 
 
 }
