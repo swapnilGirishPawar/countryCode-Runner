@@ -4,16 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="badddd38-441b-45c1-b541-e1254f5601de" name="Changes" comment="First commit - 1">
+    <list default="true" id="badddd38-441b-45c1-b541-e1254f5601de" name="Changes" comment="Desired caps added for Android and IOS">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/iOSCustomerCreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/iOSLocators.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass/Capabilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseClass/Capabilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AndroidBusinessProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AndroidBusinessProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/iOSBusinessProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/iOSBusinessProfile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -54,6 +62,13 @@
     "TestNG.AndroidBusinessProfile.executor": "Run",
     "TestNG.iOSBusinessProfile.executor": "Run",
     "TestNG.iOSBusinessProfile.testBusinessProfile.executor": "Run",
+    "TestNG.iOSCustomerCreate (1).executor": "Debug",
+    "TestNG.iOSCustomerCreate (2).executor": "Run",
+    "TestNG.iOSCustomerCreate (3).executor": "Run",
+    "TestNG.iOSCustomerCreate (4).executor": "Run",
+    "TestNG.iOSCustomerCreate (5).executor": "Run",
+    "TestNG.iOSCustomerCreate.executor": "Run",
+    "TestNG.iOSCustomerCreate.testCustomerCreate.executor": "Run",
     "git-widget-placeholder": "customerCreate",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -61,10 +76,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.iOSBusinessProfile">
+  <component name="RunManager" selected="TestNG.iOSCustomerCreate (4)">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,24 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AndroidBusinessProfile (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="countryCode-Runner" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AndroidBusinessProfile" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AndroidBusinessProfile (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AndroidBusinessProfile" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="countryCode-Runner" />
       <extension name="coverage">
         <pattern>
@@ -127,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="iOSBusinessProfile" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="iOSCustomerCreate (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="countryCode-Runner" />
       <extension name="coverage">
         <pattern>
@@ -136,7 +135,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.iOSBusinessProfile" />
+      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -144,7 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="iOSBusinessProfile.testBusinessProfile" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="iOSCustomerCreate (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="countryCode-Runner" />
       <extension name="coverage">
         <pattern>
@@ -153,9 +152,59 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.iOSBusinessProfile" />
-      <option name="METHOD_NAME" value="testBusinessProfile" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOSCustomerCreate (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="countryCode-Runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOSCustomerCreate (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="countryCode-Runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOSCustomerCreate (5)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="countryCode-Runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -164,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.iOSBusinessProfile" />
-        <item itemvalue="TestNG.iOSBusinessProfile.testBusinessProfile" />
-        <item itemvalue="TestNG.AndroidBusinessProfile (2)" />
-        <item itemvalue="TestNG.AndroidBusinessProfile (1)" />
-        <item itemvalue="TestNG.AndroidBusinessProfile" />
+        <item itemvalue="TestNG.iOSCustomerCreate (4)" />
+        <item itemvalue="TestNG.iOSCustomerCreate (3)" />
+        <item itemvalue="TestNG.iOSCustomerCreate (2)" />
+        <item itemvalue="TestNG.iOSCustomerCreate (1)" />
+        <item itemvalue="TestNG.iOSCustomerCreate (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +245,9 @@
       <workItem from="1729603444613" duration="938000" />
       <workItem from="1729604443218" duration="33000" />
       <workItem from="1729604488716" duration="179000" />
-      <workItem from="1729604756152" duration="961000" />
+      <workItem from="1729604756152" duration="4409000" />
+      <workItem from="1729615667702" duration="2585000" />
+      <workItem from="1729657911967" duration="10441000" />
     </task>
     <task id="LOCAL-00001" summary="First commit - 1">
       <option name="closed" value="true" />
@@ -206,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729604080840</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Desired caps added for Android and IOS">
+      <option name="closed" value="true" />
+      <created>1729605760144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729605760144</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +273,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit - 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit - 1" />
+    <MESSAGE value="Desired caps added for Android and IOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Desired caps added for Android and IOS" />
   </component>
 </project>

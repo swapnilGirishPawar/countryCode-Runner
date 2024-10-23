@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
 public class Capabilities extends CommonUtils {
-    AppiumDriver driver=null;
+    public static AppiumDriver driver=null;
 
     public AppiumDriver launchDriver(String platform) throws Throwable {
         DesiredCapabilities capabilities = getCapabilities(platform);
