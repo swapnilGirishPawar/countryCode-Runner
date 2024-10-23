@@ -6,11 +6,8 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import io.appium.java_client.AppiumDriver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import java.io.FileReader;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,7 +33,7 @@ public class BusinessProfileFunctions extends Capabilities {
             failedCountries.add(countryName);
         }
         else {
-            System.out.println("Selected country matched with country value from JSON");
+            System.out.println("✅ Selected country matched with country value from JSON");
             PassedCountries.add(countryName);
 
         }
@@ -48,7 +45,6 @@ public class BusinessProfileFunctions extends Capabilities {
     }
 
     public void navigateFromBusinessProfileToCustomerTab(AppiumDriver driver) throws Throwable {
-        System.out.println("Navigating from Business Profile to Customer Creation");
         Thread.sleep(6000);
         tapOnElement2("accessibilityid$anywhere_back", "your brand back button", driver);
         tapOnElement("iOSBottomNavBar.Customers", "Customers tab", driver);
@@ -58,12 +54,20 @@ public class BusinessProfileFunctions extends Capabilities {
     public void looper(AppiumDriver driver) throws Throwable {
         JsonArray countries = readCountriesFromJson();
         NavigateToBusinessProfile(driver);
+        String PhoneNumber = null;
         for (int i = 0; i < countries.size(); i++) {
             JsonObject countryObj = countries.get(i).getAsJsonObject();
-            String countryName = countryObj.get("name").getAsString();
-            String PhoneNumber = countryObj.get("phoneNumber").getAsString();
-            String dialingCode = countryObj.get("dialingCode").getAsString();
-            System.out.println("Country under test - " + countryName);
+            String countryName = countryObj.get("name").getAsString();;
+            String dialingCode = countryObj.get("dialingCode").getAsString();;
+            try {
+                PhoneNumber = countryObj.get("phoneNumber").getAsString();
+
+            } catch (NullPointerException e){
+                failedCountries.add(countryName);
+                System.out.println("⚠\uFE0F Country skipped due to unavailable phone number in JSON file " + countryName);
+                System.out.println("________________________________________________________________________________________");
+                continue;
+            }
 
             // Update the value in business Profile
             countryCodeChnger(driver, countryName, PhoneNumber);
@@ -81,13 +85,17 @@ public class BusinessProfileFunctions extends Capabilities {
             // navigate back to business Profile
             NavigateToBusinessProfile(driver);
 
+            System.out.println("________________________________________________________________________________________");
+
         }
 
+        System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
         if (failedCountries.isEmpty()) {
-            System.out.println("All countries matched successfully!");
+            System.out.println("✅ ✅ ✅ All countries matched successfully! ✅ ✅ ✅");
         } else {
-            System.out.println("Countries that failed to match: " + failedCountries);
+            System.out.println("\uD83D\uDEA8 \uD83D\uDEA8 \uD83D\uDEA8 Countries that failed to match: \n" + failedCountries);
         }
+        System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
     }
 
     public JsonArray readCountriesFromJson() throws Exception {

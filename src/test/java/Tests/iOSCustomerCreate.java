@@ -84,11 +84,11 @@ public class iOSCustomerCreate extends Capabilities {
         Thread.sleep(2000);
 
         if (isDisplayed(saveButton)) {
-            System.out.println("Customer created Failed!!");
+            System.out.println("\uD83D\uDEA8 \uD83D\uDEA8 \uD83D\uDEA8Customer created Failed!!");
             exitCustomerCreate();
             return countryName;
         } else {
-            System.out.println("Customer created Successfully!!");
+            System.out.println("✅ ✅ ✅Customer created Successfully!!");
             gobackToCalendar();
         }
         return null;
@@ -114,17 +114,20 @@ public class iOSCustomerCreate extends Capabilities {
 
     public void validatePhoneNumber(AppiumDriver driver, String dialingCode, String phoneNumber) throws Throwable {
         String FullNumber = "+" +dialingCode + phoneNumber;
-        String phoneNumberOverView = getTextOfElement(driver, "General.phoneNumberOverview").replaceAll("\\s", "");
+        String phoneNumberOverView = getTextOfElement(driver, "General.phoneNumberOverview").replaceAll("[\\s-]", "");
         if(phoneNumberOverView.equalsIgnoreCase(FullNumber)){
-//        if (isDisplayed("//XCUIElementTypeButton[@name=\"" + FullNumber + "\"]")) {
             System.out.println("Phone number is correct");
             // delete customer
             delete(driver);
+            clearTheSearchedQuery();
         } else {
-            System.out.println(FullNumber);
             System.out.println("Phone number is incorrect");
+            System.out.println("wrong phone number on page - "+ phoneNumberOverView);
+            System.out.println("expected phone number - "+ FullNumber);
+            clickElementByXPath(backBtn);
+            clickElementByXPath(clearSearchedQuery);
+            clearTheSearchedQuery();
         }
-        clearTheSearchedQuery();
     }
     public void delete(AppiumDriver driver) throws Throwable {
         tapOnElement("Booking.threeDotsEventButton", "Three dots in the overview page", driver);

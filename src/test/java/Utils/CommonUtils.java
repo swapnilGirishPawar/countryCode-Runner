@@ -41,10 +41,9 @@ public class CommonUtils {
         String Locator = element;
         WebElement value = StringToElementConverter(Locator, driver);
         if (value == null) {
-            System.out.println("failed");
+            System.out.println("failed to click on " + elementName);
         } else {
             value.click();
-            System.out.println(("Clicked on [" + elementName + "]"));
         }
     }
 

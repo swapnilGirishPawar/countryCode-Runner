@@ -296,7 +296,8 @@
     "currencySymbol": "kr",
     "countryCode": "BV",
     "iso3": "BVT",
-    "dialingCode": "47"
+    "dialingCode": "47",
+    "phoneNumber":"322234224"
   },
   {
     "name": "Brazil",
@@ -765,7 +766,8 @@
     "currencySymbol": "€",
     "countryCode": "GF",
     "iso3": "GUF",
-    "dialingCode": "594"
+    "dialingCode": "594",
+    "phoneNumber": "694452310"
   },
   {
     "name": "French Polynesia",
@@ -774,7 +776,8 @@
     "currencySymbol": "₣",
     "countryCode": "PF",
     "iso3": "PYF",
-    "dialingCode": "689"
+    "dialingCode": "689",
+    "phoneNumber": "87709192"
   },
   {
     "name": "French Southern Territories",
@@ -792,7 +795,8 @@
     "currencySymbol": "FCFA",
     "countryCode": "GA",
     "iso3": "GAB",
-    "dialingCode": "241"
+    "dialingCode": "241",
+    "phoneNumber": "62125800"
   },
   {
     "name": "Gambia",
@@ -801,7 +805,8 @@
     "currencySymbol": "D",
     "countryCode": "GM",
     "iso3": "GMB",
-    "dialingCode": "220"
+    "dialingCode": "220",
+    "phoneNumber": "07816814"
   },
   {
     "name": "Georgia",
@@ -810,7 +815,8 @@
     "currencySymbol": "ლ",
     "countryCode": "GE",
     "iso3": "GEO",
-    "dialingCode": "995"
+    "dialingCode": "995",
+    "phoneNumber": "596998585"
   },
   {
     "name": "Germany",
@@ -2067,7 +2073,8 @@
     "currencySymbol": "£",
     "countryCode": "GS",
     "iso3": "SGS",
-    "dialingCode": "500"
+    "dialingCode": "500",
+    "phoneNumber": "28200"
   },
   {
     "name": "South Sudan",
