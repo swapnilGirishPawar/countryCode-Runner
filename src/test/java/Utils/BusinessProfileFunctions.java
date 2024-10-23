@@ -1,6 +1,7 @@
 package Utils;
 
 import BaseClass.Capabilities;
+import Tests.iOSCustomerCreate;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -18,6 +19,7 @@ import java.util.List;
 
 public class BusinessProfileFunctions extends Capabilities {
     public String CountryName = "India";
+    iOSCustomerCreate customerCreate = new iOSCustomerCreate();
     public static String selectedCountry;
 
     public void NavigateToBusinessProfile(AppiumDriver driver) throws Throwable {
@@ -45,7 +47,7 @@ public class BusinessProfileFunctions extends Capabilities {
 
     public void navigateFromBusinessProfileToCustomerTab(AppiumDriver driver) throws Throwable {
         System.out.println("Navigating from Business Profile to Customer Creation");
-        tapOnElement("common.backButton1", "your brand back button", driver);
+//        tapOnElement("common.backButton1", "your brand back button", driver);
         tapOnElement("iOSBottomNavBar.Customers", "Customers tab", driver);
     }
 
@@ -53,6 +55,7 @@ public class BusinessProfileFunctions extends Capabilities {
     public void looper(AppiumDriver driver) throws Throwable {
         JsonArray countries = readCountriesFromJson();
         NavigateToBusinessProfile(driver);
+
         for (int i = 0; i < countries.size(); i++) {
             // get value from JSON
             JsonObject countryObj = countries.get(i).getAsJsonObject();
@@ -67,7 +70,7 @@ public class BusinessProfileFunctions extends Capabilities {
             navigateFromBusinessProfileToCustomerTab(driver);
 
             // customer creation flow
-
+            customerCreate.testCustomerCreate(driver, countryName, PhoneNumber);
 
             // navigate back to business Profile
             NavigateToBusinessProfile(driver);

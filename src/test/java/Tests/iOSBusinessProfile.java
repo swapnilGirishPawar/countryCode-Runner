@@ -27,7 +27,7 @@ public class iOSBusinessProfile extends BusinessProfileFunctions {
     public void testBusinessProfile() throws Throwable {
         System.out.println("Business Profile test");
         looper(driver);
-//        navigateFromBusinessProfileToCustomerTab(driver);
+//      navigateFromBusinessProfileToCustomerTab(driver);
     }
 
 
