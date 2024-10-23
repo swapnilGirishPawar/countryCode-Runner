@@ -26,6 +26,12 @@ public class iOSCustomerCreate extends Capabilities {
     String customerSearchBar;
     String backBtn;
     String calendarBtn;
+    String cancelBtn;
+    String discardNleave;
+    String clearSearchedQuery;
+    String cancelSearch;
+    int i=0;
+
 
     @BeforeClass
     public void setup() throws Throwable {
@@ -42,40 +48,54 @@ public class iOSCustomerCreate extends Capabilities {
             e.printStackTrace();
         }
         customerTab = properties.getProperty("customerTab");
-        addNewCustomer= properties.getProperty("addNewCustomer");
-        addCustomerManually= properties.getProperty("addCustomerManually");
-        customerName= properties.getProperty("customerName");
-        phoneNumber= properties.getProperty("customerPhonenumber");
-        saveButton= properties.getProperty("saveButton");
-        customerSearchBar= properties.getProperty("customerSearchBar");
-        backBtn= properties.getProperty("backBtn");
-        calendarBtn= properties.getProperty("calendarBtn");
-
+        addNewCustomer = properties.getProperty("addNewCustomer");
+        addCustomerManually = properties.getProperty("addCustomerManually");
+        customerName = properties.getProperty("customerName");
+        phoneNumber = properties.getProperty("customerPhonenumber");
+        saveButton = properties.getProperty("saveButton");
+        customerSearchBar = properties.getProperty("customerSearchBar");
+        backBtn = properties.getProperty("backBtn");
+        calendarBtn = properties.getProperty("calendarBtn");
+        cancelBtn = properties.getProperty("cancelBtn");
+        discardNleave = properties.getProperty("discardNleave");
+        clearSearchedQuery = properties.getProperty("clearSearchedQuery");
+        cancelSearch = properties.getProperty("cancelSearch");
 
     }
 
     @Test
     public void testCustomerCreate() throws Exception {
-        createCustomer();
-        openCustomerOverview("Sudhansu1234");
-        validatePhoneNumber("9090031459");
+        jsonValidation();
+    }
+
+    public void jsonValidation() throws Exception {
+        while(i<=2){
+            createCustomer();
+            openCustomerOverview("Sudhansu1234");
+            validatePhoneNumber("9090031459");
+        }
+        System.out.println("JSON validation completed");
     }
 
     public void createCustomer() throws Exception {
         clickElementByXPath(customerTab);
         clickElementByXPath(addNewCustomer);
         clickElementByXPath(addCustomerManually);
-        sendKeysByXpath(customerName,"Sudhansu1234");
-        sendKeysByXpath(phoneNumber, "9090031459");
+        sendKeysByXpath(customerName, "Sudhansu1234");
+        sendKeysByXpath(phoneNumber, "909003145");
         clickElementByXPath(saveButton);
         Thread.sleep(2000);
+        i++;
+        System.out.println(i);
 
         if (isDisplayed(saveButton)) {
             System.out.println("Customer created Failed!!");
+            exitCustomerCreate();
         } else {
             System.out.println("Customer created Successfully!!");
+            gobackToCalendar();
         }
-        gobackToCalendar();
+
     }
 
     public void openCustomerOverview(String customerName) throws Exception {
@@ -85,17 +105,25 @@ public class iOSCustomerCreate extends Capabilities {
         driver.findElement(By.id("Sudhansu1234")).click();
     }
 
+    public void exitCustomerCreate() throws Exception {
+        clickElementByXPath(cancelBtn);
+        clickElementByXPath(discardNleave);
+        clickElementByXPath(calendarBtn);
+        jsonValidation();
+    }
+
     public void gobackToCalendar() throws Exception {
         clickElementByXPath(backBtn);
         clickElementByXPath(calendarBtn);
     }
 
-    public void validatePhoneNumber(String phoneNumber) {
-        if (isDisplayed("//XCUIElementTypeButton[@name=\"+91"+phoneNumber+"\"]")) {
+    public void validatePhoneNumber(String phoneNumber) throws Exception {
+        if (isDisplayed("//XCUIElementTypeButton[@name=\"+91" + phoneNumber + "\"]")) {
             System.out.println("Phone number is correct");
         } else {
             System.out.println("Phone number is incorrect");
         }
+        clearTheSearchedQuery();
     }
 
     public void clickElementByXPath(String xpath) throws Exception {
@@ -119,9 +147,15 @@ public class iOSCustomerCreate extends Capabilities {
     public boolean isDisplayed(String xpath) {
         try {
             return driver.findElement(By.xpath(xpath)).isDisplayed();
-        }
-        catch (WebDriverException e) {
+        } catch (WebDriverException e) {
             return false;
         }
+    }
+
+    public void clearTheSearchedQuery() throws Exception {
+        clickElementByXPath(backBtn);
+        clickElementByXPath(clearSearchedQuery);
+        clickElementByXPath(cancelSearch);
+        clickElementByXPath(calendarBtn);
     }
 }
