@@ -5,23 +5,13 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.touch.WaitOptions;
-import io.appium.java_client.touch.offset.PointOption;
-import org.openqa.selenium.Dimension;
-import java.time.Duration;
 
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
 
 public class BusinessProfileFunctions extends Capabilities {
-    public String CountryName = "India";
     public static String selectedCountry;
 
     public void NavigateToBusinessProfile(AppiumDriver driver) throws Throwable {
-        System.out.println("Navigating to Business Profile");
         tapOnElement("iOSBottomNavBar.settings", "Settings", driver);
         tapOnElement("iOSSettings.yourBrand", "Your Brand", driver);
     }
@@ -35,6 +25,9 @@ public class BusinessProfileFunctions extends Capabilities {
         selectedCountry = SelectProperCountry(countryName, driver);
         if(!validateString(countryName, selectedCountry)){
             System.out.println("Country Name from JSON and Selected Country is not matching");
+        }
+        else {
+            System.out.println("Selected country matched with country value from JSON");
         }
         tapOnElement("iOSYourBrand.Save", "Save Button", driver);
     }
@@ -58,19 +51,15 @@ public class BusinessProfileFunctions extends Capabilities {
             JsonObject countryObj = countries.get(i).getAsJsonObject();
             String countryName = countryObj.get("name").getAsString();
             String PhoneNumber = countryObj.get("phoneNumber").getAsString();
-            System.out.println("Country Name: " + countryName);
-            System.out.println("Phone Number: " + PhoneNumber);
 
             // Update the value in business Profile
             countryCodeChnger(driver, countryName, PhoneNumber);
+
             // navigate back to customer tab.
-            navigateFromBusinessProfileToCustomerTab(driver);
 
             // customer creation flow
-            System.out.println("customer create flow completed");
 
             // navigate back to business Profile
-            NavigateToBusinessProfile(driver);
 
         }
     }

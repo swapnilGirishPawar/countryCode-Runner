@@ -1,16 +1,12 @@
 package Tests;
 
 import Utils.BusinessProfileFunctions;
-import Utils.LoginFunctions;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import io.appium.java_client.ios.IOSDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class iOSBusinessProfile extends BusinessProfileFunctions {
-    LoginFunctions login = new LoginFunctions();
     IOSDriver driver;
     @Parameters({"platform"})
     @BeforeClass
@@ -25,7 +21,6 @@ public class iOSBusinessProfile extends BusinessProfileFunctions {
 
     @Test
     public void testBusinessProfile() throws Throwable {
-        System.out.println("Business Profile test");
         looper(driver);
     }
 

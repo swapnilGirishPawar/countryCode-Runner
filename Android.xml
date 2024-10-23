@@ -2,7 +2,6 @@
 <suite name="Country Code runner - Android" parallel="none" thread-count="5">
     <test name="Testing 1 flow">
         <classes>
-            <class name="BaseClass.AndroidHooks"/>
             <class name="Tests.AndroidBusinessProfile"/>
             <class name="Tests.AndroidCustomerProfile"/>
         </classes>
