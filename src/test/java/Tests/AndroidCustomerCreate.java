@@ -30,7 +30,7 @@ public class AndroidCustomerCreate extends Capabilities {
     public void beforeTest() {
         Properties properties = new Properties();
 
-        try (FileInputStream input = new FileInputStream("src/test/java/resources/AndroidLocators.properties")) {
+        try (FileInputStream input = new FileInputStream("src/test/resources/AndroidLocators.properties")) {
             properties.load(input);
         } catch (IOException e) {
             e.printStackTrace();
