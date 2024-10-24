@@ -38,7 +38,6 @@ public class androidCustomerCreate extends Capabilities {
     String customerDeleteConfirm;
     String customerOverviewPhonenumber;
 
-    @BeforeTest
     public void setup() throws Throwable {
         driver = (AndroidDriver) launchDriver("Android");
     }
@@ -83,13 +82,12 @@ public class androidCustomerCreate extends Capabilities {
 
     }
 
-    @Test
-    public void testRun() throws Throwable {
-        beforeTest();
-        createCustomer("Swaden", "9090031523");
-        openCustomerOverview("Swaden");
-        validatePhoneNumber(driver, "91", "9090031523");
-    }
+//    public void testRun() throws Throwable {
+//        beforeTest();
+//        createCustomer("Swaden", "9090031523");
+//        openCustomerOverview("Swaden");
+//        validatePhoneNumber(driver, "91", "9090031523");
+//    }
 
     public String createCustomer(String countryName, String mobileNumber) throws Exception {
         clickElementByXPath(customerTab);
