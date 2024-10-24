@@ -18,6 +18,7 @@ public class AndroidCustomerCreate extends Capabilities {
     String addNewCustomer;
     String addCustomerManually;
     String customerName;
+    String searchboxType;
     String phoneNumber;
     String saveButton;
     String customerSearchBar;
@@ -27,6 +28,11 @@ public class AndroidCustomerCreate extends Capabilities {
     String discardNleave;
     String clearSearchedQuery;
     String cancelSearch;
+    String customerOverview3Dot;
+    String customerDelete;
+    String customerYesDelete;
+    String customerDeleteConfirm;
+    String customerOverviewPhonenumber;
     public void beforeTest() {
         Properties properties = new Properties();
 
@@ -48,6 +54,12 @@ public class AndroidCustomerCreate extends Capabilities {
         discardNleave = properties.getProperty("discardNleave");
         clearSearchedQuery = properties.getProperty("clearSearchedQuery");
         cancelSearch = properties.getProperty("cancelSearch");
+        searchboxType = properties.getProperty("searchboxType");
+        customerOverview3Dot = properties.getProperty("customerOverview3Dot");
+        customerDelete = properties.getProperty("customerDelete");
+        customerYesDelete = properties.getProperty("customerYesDelete");
+        customerDeleteConfirm = properties.getProperty("customerDeleteConfirm");
+        customerOverviewPhonenumber = properties.getProperty("customerOverviewPhonenumber");
 
     }
     public String customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Throwable {
@@ -61,33 +73,28 @@ public class AndroidCustomerCreate extends Capabilities {
 
     }
     public String getTextOfElement(AppiumDriver driver, String element) throws Throwable {
-        String Locator = ReadProperties(element, AndroidLocatorPropertiesFile);
-        WebElement value = StringToElementConverter(Locator, driver);
-        return value.getText();
-
+        return driver.findElement(By.xpath(element)).getText();
     }
     public void validatePhoneNumber(AppiumDriver driver, String dialingCode, String phoneNumber) throws Throwable {
-        String FullNumber = "+" +dialingCode + phoneNumber;
-        String phoneNumberOverView = getTextOfElement(driver, "General.phoneNumberOverview").replaceAll("[\\s-]", "");
-        if(phoneNumberOverView.equalsIgnoreCase(FullNumber)){
+        String FullNumber = "+" + dialingCode + phoneNumber;
+        String phoneNumberOverView = getTextOfElement(driver, customerOverviewPhonenumber).replaceAll("\\s", "");
+        if (phoneNumberOverView.equalsIgnoreCase(FullNumber)) {
+//        if (isDisplayed("//XCUIElementTypeButton[@name=\"" + FullNumber + "\"]")) {
             System.out.println("Phone number is correct");
             // delete customer
-            delete(driver);
-            clearTheSearchedQuery();
+            delete();
         } else {
+            System.out.println(FullNumber);
             System.out.println("Phone number is incorrect");
-            System.out.println("wrong phone number on page - "+ phoneNumberOverView);
-            System.out.println("expected phone number - "+ FullNumber);
-            clickElementByXPath(backBtn);
-            clickElementByXPath(clearSearchedQuery);
-            clearTheSearchedQuery();
         }
+        clearTheSearchedQuery();
     }
     public void openCustomerOverview(String customerName) throws Exception {
         clickElementByXPath(customerTab);
-        sendKeysByXpath(customerSearchBar, customerName);
+        clickElementByXPath(customerSearchBar);
+        sendKeysByXpath(searchboxType, customerName);
         Thread.sleep(2000);
-        driver.findElement(By.id(customerName)).click();
+        driver.findElement(By.xpath("//android.widget.TextView[@text=\"" + customerName + "\"]")).click();
     }
     public String createCustomer(String countryName, String mobileNumber) throws Exception {
         clickElementByXPath(customerTab);
@@ -140,17 +147,14 @@ public class AndroidCustomerCreate extends Capabilities {
         clickElementByXPath(backBtn);
         clickElementByXPath(calendarBtn);
     }
-    public void delete(AppiumDriver driver) throws Throwable {
-        tapOnElementAndroid("Booking.threeDotsEventButton", "Three dots in the overview page", driver);
-        tapOnElementAndroid("Booking.deleteEventButton", "Delete button", driver);
-        tapOnElementAndroid("Booking.deletecustomerName", "Got it button", driver);
-        tapOnElementAndroid("Booking.finalConfirm", "Delete -confirmation popup button", driver);
+    public void delete() throws Throwable {
+        clickElementByXPath(customerOverview3Dot);
+        clickElementByXPath(customerDelete);
+        clickElementByXPath(customerYesDelete);
+        clickElementByXPath(customerDeleteConfirm);
     }
     public void clearTheSearchedQuery() throws Exception {
-//        clickElementByXPath(backBtn);
-//        clickElementByXPath(clearSearchedQuery);
         Thread.sleep(1000);
-        clickElementByXPath(cancelSearch);
         clickElementByXPath(calendarBtn);
     }
 }
