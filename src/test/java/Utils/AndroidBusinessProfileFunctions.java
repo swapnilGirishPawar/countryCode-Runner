@@ -70,11 +70,11 @@ public class AndroidBusinessProfileFunctions extends Capabilities {
             // navigate back to customer tab.
             navigateFromBusinessProfileToCustomerTab(driver);
             // customer creation flow
-//            String FailedCountry = obj.customerFlow(countryName, PhoneNumber,dialingCode, driver);
+            String FailedCountry = customer.customerFlow(countryName, PhoneNumber,dialingCode, driver);
 
-//            if(FailedCountry!=null){
-//                failedCountries.add(FailedCountry);
-//            }
+            if(FailedCountry!=null){
+                failedCountries.add(FailedCountry);
+            }
 
             // navigate back to business Profile
             NavigateToBusinessProfile(driver);
