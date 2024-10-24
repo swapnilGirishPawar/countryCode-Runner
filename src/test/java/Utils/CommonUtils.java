@@ -80,7 +80,7 @@ public class CommonUtils {
         }
     }
 
-    public String SelectProperCountry(String CountryNameFromJson, AppiumDriver driver) {
+    public String SelectProperCountryiOS(String CountryNameFromJson, AppiumDriver driver) {
         try {
             List<WebElement> countries = driver.findElements(By.xpath("//XCUIElementTypeSearchField[@name=\"Search\"]/ancestor::XCUIElementTypeOther/following-sibling::XCUIElementTypeCollectionView//XCUIElementTypeCell"));
             if (!countries.isEmpty()) {
@@ -93,6 +93,23 @@ public class CommonUtils {
                     return ActualSelectedCountry;
                 }
             } else {
+                System.out.println("No countries found");
+            }
+            return null;
+        } catch (Exception e) {
+            System.out.println("failed in GetListOfSearchedCountries method");
+        }
+        return null;
+    }
+    public String SelectProperCountryAndroid(String CountryNameFromJson, AppiumDriver driver) {
+
+        try {
+            WebElement element = driver.findElement(By.xpath("//android.widget.TextView[@text=\""+CountryNameFromJson+"\"]"));
+            if(element.isDisplayed()){
+             element.click();
+             return CountryNameFromJson;
+            }
+             else {
                 System.out.println("No countries found");
             }
             return null;

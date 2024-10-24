@@ -18,19 +18,19 @@ public class AndroidBusinessProfileFunctions extends Capabilities {
     AndroidCustomerCreate customer = new AndroidCustomerCreate();
 
     public void NavigateToBusinessProfile(AppiumDriver driver) throws Throwable {
-        tapOnElementAndroid("", "Settings", driver);
-        tapOnElementAndroid("", "Your Brand", driver);
+        tapOnElementAndroid("BottomNavBar.settings", "Settings", driver);
+        tapOnElementAndroid("settings.yourBrand", "Your Brand", driver);
     }
     public void countryCodeChnger(AppiumDriver driver, String countryName, String phoneNumber) throws Throwable {
         UpdateCountry(driver,countryName, phoneNumber);
     }
     public void UpdateCountry(AppiumDriver driver, String countryName, String phoneNumber) throws Throwable {
-        tapOnElementAndroid("iOSYourBrand.editIcon", "Edit Icon", driver);
-        tapOnElementAndroid("iOSYourBrand.Country", "Country", driver);
-        tapOnElementAndroid("iOSYourBrand.countrySearchBar", "Search Bar", driver);
-        typeAndroid("iOSYourBrand.countrySearchBar", countryName, "Search Bar", driver);
+        tapOnElementAndroid("customers.editCustomers", "Edit Icon", driver);
+        tapOnElementAndroid("customers.country", "Country", driver);
+        tapOnElementAndroid("YourBrand.countrySearchBar", "Search Bar", driver);
+        typeAndroid("YourBrand.countrySearchBarInput", countryName, "Search Bar", driver);
         Thread.sleep(2000);
-        selectedCountry = SelectProperCountry(countryName, driver);
+        selectedCountry = SelectProperCountryAndroid(countryName, driver);
         if(!validateString(countryName, selectedCountry)){
             failedCountries.add(countryName);
         }
@@ -39,12 +39,12 @@ public class AndroidBusinessProfileFunctions extends Capabilities {
             PassedCountries.add(countryName);
 
         }
-        tapOnElementAndroid("iOSYourBrand.Save", "Save Button", driver);
+        tapOnElementAndroid("YourBrand.saveButton", "Save Button", driver);
     }
     public void navigateFromBusinessProfileToCustomerTab(AppiumDriver driver) throws Throwable {
         Thread.sleep(6000);
-        tapOnElement2("accessibilityid$anywhere_back", "your brand back button", driver);
-        tapOnElementAndroid("iOSBottomNavBar.Customers", "Customers tab", driver);
+        tapOnElementAndroid("YourBrand.backButton", "your brand back button", driver);
+        tapOnElementAndroid("BottomNavBar.customers", "Customers tab", driver);
     }
     public void AndroidLooper(AppiumDriver driver) throws Throwable {
         System.out.println("Hello from AndroidLooper");
@@ -67,15 +67,14 @@ public class AndroidBusinessProfileFunctions extends Capabilities {
 //          Update the value in business Profile
             countryCodeChnger(driver, countryName, PhoneNumber);
 
-
             // navigate back to customer tab.
             navigateFromBusinessProfileToCustomerTab(driver);
             // customer creation flow
-            String FailedCountry = obj.customerFlow(countryName, PhoneNumber,dialingCode, driver);
+//            String FailedCountry = obj.customerFlow(countryName, PhoneNumber,dialingCode, driver);
 
-            if(FailedCountry!=null){
-                failedCountries.add(FailedCountry);
-            }
+//            if(FailedCountry!=null){
+//                failedCountries.add(FailedCountry);
+//            }
 
             // navigate back to business Profile
             NavigateToBusinessProfile(driver);

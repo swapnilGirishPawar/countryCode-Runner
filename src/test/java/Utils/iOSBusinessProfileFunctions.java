@@ -28,7 +28,7 @@ public class iOSBusinessProfileFunctions extends Capabilities {
         tapOnElementiOS("iOSYourBrand.countrySearchBar", "Search Bar", driver);
         typeiOS("iOSYourBrand.countrySearchBar", countryName, "Search Bar", driver);
         Thread.sleep(2000);
-        selectedCountry = SelectProperCountry(countryName, driver);
+        selectedCountry = SelectProperCountryiOS(countryName, driver);
         if(!validateString(countryName, selectedCountry)){
             failedCountries.add(countryName);
         }
