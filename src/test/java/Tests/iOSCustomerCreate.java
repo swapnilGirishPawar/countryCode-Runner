@@ -41,7 +41,7 @@ public class iOSCustomerCreate extends Capabilities {
     public void beforeTest() {
         Properties properties = new Properties();
 
-        try (FileInputStream input = new FileInputStream("src/test/java/resources/iOSLocators.properties")) {
+        try (FileInputStream input = new FileInputStream("src/test/resources/iOSLocators.properties")) {
             properties.load(input);
         } catch (IOException e) {
             e.printStackTrace();
@@ -127,6 +127,7 @@ public class iOSCustomerCreate extends Capabilities {
             clickElementByXPath(backBtn);
             clickElementByXPath(clearSearchedQuery);
             clearTheSearchedQuery();
+
         }
     }
     public void delete(AppiumDriver driver) throws Throwable {

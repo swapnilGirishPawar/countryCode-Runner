@@ -1,141 +1,52 @@
 [
   {
-    "name": "Guyana",
-    "currency": "Guyanese dollar",
-    "currencyCode": "GYD",
-    "currencySymbol": "$",
-    "countryCode": "GY",
-    "iso3": "GUY",
-    "dialingCode": "592",
-    "phoneNumber": "2201234"
+    "name": "Poland",
+    "currency": "Polish złoty",
+    "currencyCode": "PLN",
+    "currencySymbol": "zł",
+    "countryCode": "PL",
+    "iso3": "POL",
+    "dialingCode": "48",
+    "phoneNumber": "123456789"
   },
   {
-    "name": "Haiti",
-    "currency": "Haitian gourde",
-    "currencyCode": "HTG",
-    "currencySymbol": "G",
-    "countryCode": "HT",
-    "iso3": "HTI",
-    "dialingCode": "509",
-    "phoneNumber": "22453300"
-  },
-  {
-    "name": "Heard Island and McDonald Islands",
-    "currency": "Australian dollar",
-    "currencyCode": "AUD",
-    "currencySymbol": "$",
-    "countryCode": "HM",
-    "iso3": "HMD",
-    "dialingCode": "672"
-  },
-  {
-    "name": "Holy See (Vatican City State)",
+    "name": "Portugal",
     "currency": "Euro",
     "currencyCode": "EUR",
     "currencySymbol": "€",
-    "countryCode": "VA",
-    "iso3": "VAT",
-    "dialingCode": "379",
-    "phoneNumber": "669812345"
+    "countryCode": "PT",
+    "iso3": "PRT",
+    "dialingCode": "351",
+    "phoneNumber": "212345678"
   },
   {
-    "name": "Honduras",
-    "currency": "Honduran lempira",
-    "currencyCode": "HNL",
-    "currencySymbol": "L",
-    "countryCode": "HN",
-    "iso3": "HND",
-    "dialingCode": "504",
-    "phoneNumber": "22123456"
-  },
-  {
-    "name": "Hong Kong",
-    "currency": "Hong Kong dollar",
-    "currencyCode": "HKD",
+    "name": "Puerto Rico",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
     "currencySymbol": "$",
-    "countryCode": "HK",
-    "iso3": "HKG",
-    "dialingCode": "852",
-    "phoneNumber": "21234567"
+    "countryCode": "PR",
+    "iso3": "PRI",
+    "dialingCode": "1",
+    "phoneNumber": "7872345678"
   },
   {
-    "name": "Hungary",
-    "currency": "Hungarian forint",
-    "currencyCode": "HUF",
-    "currencySymbol": "Ft",
-    "countryCode": "HU",
-    "iso3": "HUN",
-    "dialingCode": "36",
-    "phoneNumber": "12345678"
-  },
-  {
-    "name": "Iceland",
-    "currency": "Icelandic króna",
-    "currencyCode": "ISK",
-    "currencySymbol": "kr",
-    "countryCode": "IS",
-    "iso3": "ISL",
-    "dialingCode": "354",
-    "phoneNumber": "4101234"
-  },
-  {
-    "name": "India",
-    "currency": "Indian rupee",
-    "currencyCode": "INR",
-    "currencySymbol": "₹",
-    "countryCode": "IN",
-    "iso3": "IND",
-    "dialingCode": "91",
-    "phoneNumber": "7410410123"
-  },
-  {
-    "name": "Indonesia",
-    "currency": "Indonesian rupiah",
-    "currencyCode": "IDR",
-    "currencySymbol": "Rp",
-    "countryCode": "ID",
-    "iso3": "IDN",
-    "dialingCode": "62",
-    "phoneNumber": "218350123"
-  },
-  {
-    "name": "Iran",
-    "currency": "Iranian rial",
-    "currencyCode": "IRR",
+    "name": "Qatar",
+    "currency": "Qatari riyal",
+    "currencyCode": "QAR",
     "currencySymbol": "﷼",
-    "countryCode": "IR",
-    "iso3": "IRN",
-    "dialingCode": "98",
-    "phoneNumber": "2123456789"
+    "countryCode": "QA",
+    "iso3": "QAT",
+    "dialingCode": "974",
+    "phoneNumber": "44123456"
   },
   {
-    "name": "Iraq",
-    "currency": "Iraqi dinar",
-    "currencyCode": "IQD",
-    "currencySymbol": "د.ع",
-    "countryCode": "IQ",
-    "iso3": "IRQ",
-    "dialingCode": "964",
-    "phoneNumber": "12345678"
-  },
-  {
-    "name": "Ireland",
+    "name": "Reunion",
     "currency": "Euro",
     "currencyCode": "EUR",
     "currencySymbol": "€",
-    "countryCode": "IE",
-    "iso3": "IRL",
-    "dialingCode": "353",
-    "phoneNumber": "2212345"
-  },
-  {
-    "name": "Isle of Man",
-    "currency": "British pound",
-    "currencyCode": "GBP",
-    "currencySymbol": "£",
-    "countryCode": "IM",
-    "iso3": "IMN",
-    "dialingCode": "44",
-    "phoneNumber": "1624756789"
+    "countryCode": "RE",
+    "iso3": "REU",
+    "dialingCode": "262",
+    "phoneNumber": "262161234"
   }
 ]

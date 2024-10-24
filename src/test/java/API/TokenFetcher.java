@@ -15,8 +15,8 @@ public class TokenFetcher {
     private static final String TOKEN_URL = "https://fullcreative.fullauth.com/o/oauth2/v1/token";
     private static final String CLIENT_ID = "7f001-a4656cce501ee97bdc09";
     private static final String CLIENT_SECRET = "ZE3Ao6ITX7v8mmzMYczPKjb1Q99cv2J5BMXfQvaq";
-    private static final String USERNAME = "test0.1@mailinator.com";
-    private static final String PASSWORD = "Setmore@24";
+    private static final String USERNAME = "countrycode@maildrop.cc";
+    private static final String PASSWORD = "setmore23";
 
     /**
      * Fetches token data and returns it as [access_token, user_id, acct_id].
