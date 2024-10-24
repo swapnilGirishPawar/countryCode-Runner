@@ -1,11 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Country Code runner - iOS" parallel="none" thread-count="5">
     <test name="Testing 1 flow">
+        <parameter name="platform" value="iOS"/>
         <classes>
-            <class name="BaseClass.IosHooks"/>
             <class name="Tests.iOSBusinessProfile"/>
-            <class name="Tests.iOSCustomerProfile"/>
         </classes>
     </test>
 </suite>
-

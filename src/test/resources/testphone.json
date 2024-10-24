@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Poland",
+    "currency": "Polish złoty",
+    "currencyCode": "PLN",
+    "currencySymbol": "zł",
+    "countryCode": "PL",
+    "iso3": "POL",
+    "dialingCode": "48",
+    "phoneNumber": "123456789"
+  },
+  {
+    "name": "Portugal",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "PT",
+    "iso3": "PRT",
+    "dialingCode": "351",
+    "phoneNumber": "212345678"
+  },
+  {
+    "name": "Puerto Rico",
+    "currency": "United States dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "countryCode": "PR",
+    "iso3": "PRI",
+    "dialingCode": "1",
+    "phoneNumber": "7872345678"
+  },
+  {
+    "name": "Qatar",
+    "currency": "Qatari riyal",
+    "currencyCode": "QAR",
+    "currencySymbol": "﷼",
+    "countryCode": "QA",
+    "iso3": "QAT",
+    "dialingCode": "974",
+    "phoneNumber": "44123456"
+  },
+  {
+    "name": "Reunion",
+    "currency": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "countryCode": "RE",
+    "iso3": "REU",
+    "dialingCode": "262",
+    "phoneNumber": "262161234"
+  }
+]
