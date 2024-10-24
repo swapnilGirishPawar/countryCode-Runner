@@ -1,12 +1,12 @@
 package Tests;
 
-import Utils.BusinessProfileFunctions;
+import Utils.iOSBusinessProfileFunctions;
 import io.appium.java_client.ios.IOSDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class iOSBusinessProfile extends BusinessProfileFunctions {
+public class iOSBusinessProfile extends iOSBusinessProfileFunctions {
     IOSDriver driver;
     @Parameters({"platform"})
     @BeforeClass
@@ -21,7 +21,7 @@ public class iOSBusinessProfile extends BusinessProfileFunctions {
 
     @Test
     public void testBusinessProfile() throws Throwable {
-        looper(driver);
+        iOSLooper(driver);
     }
 
 

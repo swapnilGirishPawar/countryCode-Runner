@@ -37,8 +37,8 @@ public class Capabilities extends CommonUtils {
         capabilities.setCapability("appium:appWaitForLaunch", true);
 
         if ("Android".equalsIgnoreCase(platform)) {
-            capabilities.setCapability("deviceName", "RZ8T31C2GFH");
-            capabilities.setCapability("platformVersion", "14");
+            capabilities.setCapability("deviceName", "47021VDJH00482");
+            capabilities.setCapability("platformVersion", "15");
             capabilities.setCapability("appium:automationName", "uiautomator2");
             capabilities.setCapability("appium:platformName", "Android");
             capabilities.setCapability("appium:appPackage", "com.adaptavant.setmore");

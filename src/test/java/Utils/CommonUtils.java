@@ -1,5 +1,7 @@
 package Utils;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonParser;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.ios.IOSDriver;
@@ -17,7 +19,8 @@ import java.util.Properties;
 public class CommonUtils {
     public static Properties Prop;
     public static WebDriverWait wait;
-    public static String LocatorPropertiesFile = "./src/test/resources/iOSLocators.properties";
+    public static String iOSLocatorPropertiesFile = "./src/test/resources/iOSLocators.properties";
+    public static String AndroidLocatorPropertiesFile = "./src/test/resources/AndroidLocators.properties";
 
     public static String ReadProperties(String Property, String Location) throws Throwable {
         Prop = new Properties();
@@ -27,8 +30,17 @@ public class CommonUtils {
         return Prop.getProperty(Property);
     }
 
-    public static void tapOnElement(String element, String elementName, AppiumDriver driver) throws Throwable {
-        String Locator = ReadProperties(element, LocatorPropertiesFile);
+    public static void tapOnElementiOS(String element, String elementName, AppiumDriver driver) throws Throwable {
+        String Locator = ReadProperties(element, iOSLocatorPropertiesFile);
+        WebElement value = StringToElementConverter(Locator, driver);
+        if (value == null) {
+            System.out.println("failed to click on " + elementName);
+        } else {
+            value.click();
+        }
+    }
+    public static void tapOnElementAndroid(String element, String elementName, AppiumDriver driver) throws Throwable {
+        String Locator = ReadProperties(element, AndroidLocatorPropertiesFile);
         WebElement value = StringToElementConverter(Locator, driver);
         if (value == null) {
             System.out.println("failed to click on " + elementName);
@@ -47,8 +59,18 @@ public class CommonUtils {
         }
     }
 
-    public static void type(String element, String input, String elementName, AppiumDriver driver) throws Throwable {
-        String Locator = ReadProperties(element, LocatorPropertiesFile);
+    public static void typeiOS(String element, String input, String elementName, AppiumDriver driver) throws Throwable {
+        String Locator = ReadProperties(element, iOSLocatorPropertiesFile);
+        WebElement value = StringToElementConverter(Locator, driver);
+        if (value != null) {
+            value.clear();
+            value.sendKeys(input);
+        } else {
+            System.out.println("failed in type method");
+        }
+    }
+    public static void typeAndroid(String element, String input, String elementName, AppiumDriver driver) throws Throwable {
+        String Locator = ReadProperties(element, AndroidLocatorPropertiesFile);
         WebElement value = StringToElementConverter(Locator, driver);
         if (value != null) {
             value.clear();
@@ -113,16 +135,13 @@ public class CommonUtils {
         }
     }
 
-    public static WebElement visibilityOfElement(String element, IOSDriver driver) throws Throwable {
-        String Locator = ReadProperties(element, LocatorPropertiesFile);
-        WebElement value = StringToElementConverter(Locator, driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-        wait.until(ExpectedConditions.visibilityOf(value));
-        return value;
-    }
-
     public boolean validateString(String string1, String string2) {
         return string1.equalsIgnoreCase(string2);
+    }
+
+    public JsonArray readCountriesFromJson() throws Exception {
+        FileReader reader = new FileReader("./src/test/resources/testphone.json");
+        return JsonParser.parseReader(reader).getAsJsonArray();
     }
 
 }

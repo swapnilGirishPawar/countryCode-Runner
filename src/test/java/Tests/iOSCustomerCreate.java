@@ -41,7 +41,7 @@ public class iOSCustomerCreate extends Capabilities {
     public void beforeTest() {
         Properties properties = new Properties();
 
-        try (FileInputStream input = new FileInputStream("src/test/java/Utils/iOSLocators.properties")) {
+        try (FileInputStream input = new FileInputStream("src/test/java/resources/iOSLocators.properties")) {
             properties.load(input);
         } catch (IOException e) {
             e.printStackTrace();
@@ -130,13 +130,13 @@ public class iOSCustomerCreate extends Capabilities {
         }
     }
     public void delete(AppiumDriver driver) throws Throwable {
-        tapOnElement("Booking.threeDotsEventButton", "Three dots in the overview page", driver);
-        tapOnElement("Booking.deleteEventButton", "Delete button", driver);
-        tapOnElement("Booking.deletecustomerName", "Got it button", driver);
-        tapOnElement("Booking.finalConfirm", "Delete -confirmation popup button", driver);
+        tapOnElementiOS("Booking.threeDotsEventButton", "Three dots in the overview page", driver);
+        tapOnElementiOS("Booking.deleteEventButton", "Delete button", driver);
+        tapOnElementiOS("Booking.deletecustomerName", "Got it button", driver);
+        tapOnElementiOS("Booking.finalConfirm", "Delete -confirmation popup button", driver);
     }
     public String getTextOfElement(AppiumDriver driver, String element) throws Throwable {
-        String Locator = ReadProperties(element, LocatorPropertiesFile);
+        String Locator = ReadProperties(element, iOSLocatorPropertiesFile);
         WebElement value = StringToElementConverter(Locator, driver);
         return value.getText();
 

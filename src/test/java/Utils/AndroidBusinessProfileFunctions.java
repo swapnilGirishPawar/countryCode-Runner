@@ -1,32 +1,34 @@
 package Utils;
 
 import BaseClass.Capabilities;
+import Tests.AndroidCustomerCreate;
 import Tests.iOSCustomerCreate;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import io.appium.java_client.AppiumDriver;
 
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BusinessProfileFunctions extends Capabilities {
+public class AndroidBusinessProfileFunctions extends Capabilities {
     public static String selectedCountry;
     List<String> PassedCountries = new ArrayList<>();
     List<String> failedCountries = new ArrayList<>();
-    iOSCustomerCreate obj = new iOSCustomerCreate();
+    AndroidCustomerCreate customer = new AndroidCustomerCreate();
 
     public void NavigateToBusinessProfile(AppiumDriver driver) throws Throwable {
-        tapOnElement("iOSBottomNavBar.settings", "Settings", driver);
-        tapOnElement("iOSSettings.yourBrand", "Your Brand", driver);
+        tapOnElementAndroid("", "Settings", driver);
+        tapOnElementAndroid("", "Your Brand", driver);
     }
-
+    public void countryCodeChnger(AppiumDriver driver, String countryName, String phoneNumber) throws Throwable {
+        UpdateCountry(driver,countryName, phoneNumber);
+    }
     public void UpdateCountry(AppiumDriver driver, String countryName, String phoneNumber) throws Throwable {
-        tapOnElement("iOSYourBrand.editIcon", "Edit Icon", driver);
-        tapOnElement("iOSYourBrand.Country", "Country", driver);
-        tapOnElement("iOSYourBrand.countrySearchBar", "Search Bar", driver);
-        type("iOSYourBrand.countrySearchBar", countryName, "Search Bar", driver);
+        tapOnElementAndroid("iOSYourBrand.editIcon", "Edit Icon", driver);
+        tapOnElementAndroid("iOSYourBrand.Country", "Country", driver);
+        tapOnElementAndroid("iOSYourBrand.countrySearchBar", "Search Bar", driver);
+        typeAndroid("iOSYourBrand.countrySearchBar", countryName, "Search Bar", driver);
         Thread.sleep(2000);
         selectedCountry = SelectProperCountry(countryName, driver);
         if(!validateString(countryName, selectedCountry)){
@@ -37,21 +39,15 @@ public class BusinessProfileFunctions extends Capabilities {
             PassedCountries.add(countryName);
 
         }
-        tapOnElement("iOSYourBrand.Save", "Save Button", driver);
+        tapOnElementAndroid("iOSYourBrand.Save", "Save Button", driver);
     }
-
-    public void countryCodeChnger(AppiumDriver driver, String countryName, String phoneNumber) throws Throwable {
-        UpdateCountry(driver,countryName, phoneNumber);
-    }
-
     public void navigateFromBusinessProfileToCustomerTab(AppiumDriver driver) throws Throwable {
         Thread.sleep(6000);
         tapOnElement2("accessibilityid$anywhere_back", "your brand back button", driver);
-        tapOnElement("iOSBottomNavBar.Customers", "Customers tab", driver);
+        tapOnElementAndroid("iOSBottomNavBar.Customers", "Customers tab", driver);
     }
-
-
-    public void looper(AppiumDriver driver) throws Throwable {
+    public void AndroidLooper(AppiumDriver driver) throws Throwable {
+        System.out.println("Hello from AndroidLooper");
         JsonArray countries = readCountriesFromJson();
         NavigateToBusinessProfile(driver);
         String PhoneNumber = null;
@@ -68,13 +64,12 @@ public class BusinessProfileFunctions extends Capabilities {
                 System.out.println("________________________________________________________________________________________");
                 continue;
             }
-
-            // Update the value in business Profile
+//          Update the value in business Profile
             countryCodeChnger(driver, countryName, PhoneNumber);
+
 
             // navigate back to customer tab.
             navigateFromBusinessProfileToCustomerTab(driver);
-
             // customer creation flow
             String FailedCountry = obj.customerFlow(countryName, PhoneNumber,dialingCode, driver);
 
@@ -96,11 +91,7 @@ public class BusinessProfileFunctions extends Capabilities {
             System.out.println("\uD83D\uDEA8 \uD83D\uDEA8 \uD83D\uDEA8 Countries that failed to match: \n" + failedCountries);
         }
         System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-    }
+        }
 
-    public JsonArray readCountriesFromJson() throws Exception {
-        FileReader reader = new FileReader("./src/test/resources/testphone.json");
-        return JsonParser.parseReader(reader).getAsJsonArray();
-    }
 
 }
