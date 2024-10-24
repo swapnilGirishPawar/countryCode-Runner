@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="badddd38-441b-45c1-b541-e1254f5601de" name="Changes" comment="Commit 3[Customer Create]">
+    <list default="true" id="badddd38-441b-45c1-b541-e1254f5601de" name="Changes" comment="New commit-1">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/androidCustomerCreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/AndroidLocators.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass/Capabilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseClass/Capabilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/iOSCustomerCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/iOSCustomerCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/BusinessProfileFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/BusinessProfileFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AndroidBusinessProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AndroidBusinessProfile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="SudhansuMerge2" />
+        <entry key="$PROJECT_DIR$" value="SudhansuMerge1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,10 +58,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/Android.xml.executor": "Run",
     "TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml.executor": "Run",
     "TestNG.AndroidBusinessProfile (1).executor": "Run",
     "TestNG.AndroidBusinessProfile (2).executor": "Run",
     "TestNG.AndroidBusinessProfile.executor": "Run",
+    "TestNG.androidCustomerCreate.customerFlow.executor": "Run",
+    "TestNG.androidCustomerCreate.executor": "Run",
     "TestNG.iOSBusinessProfile.executor": "Run",
     "TestNG.iOSBusinessProfile.testBusinessProfile.executor": "Run",
     "TestNG.iOSCustomerCreate (1).executor": "Run",
@@ -69,8 +74,9 @@
     "TestNG.iOSCustomerCreate (5).executor": "Run",
     "TestNG.iOSCustomerCreate.executor": "Run",
     "TestNG.iOSCustomerCreate.testCustomerCreate.executor": "Run",
-    "git-widget-placeholder": "SudhansuMerge1",
+    "git-widget-placeholder": "SudhansuMerge3",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/sudhansu/IdeaProjects/countryCode-Runner/src/test/java/Utils",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,7 +86,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/Utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/java/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/Android.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,6 +103,16 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/sudhansu/IdeaProjects/countryCode-Runner/Android.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="countryCode-Runner" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Android.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,7 +127,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="iOSCustomerCreate (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="androidCustomerCreate" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="countryCode-Runner" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +136,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
+      <option name="MAIN_CLASS_NAME" value="Tests.androidCustomerCreate" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -119,7 +144,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="iOSCustomerCreate (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="androidCustomerCreate.customerFlow" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="countryCode-Runner" />
       <extension name="coverage">
         <pattern>
@@ -128,8 +153,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Tests.androidCustomerCreate" />
+      <option name="METHOD_NAME" value="customerFlow" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -153,38 +179,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="iOSCustomerCreate" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="countryCode-Runner" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/Android.xml" />
+        <item itemvalue="TestNG.androidCustomerCreate.customerFlow" />
+        <item itemvalue="TestNG.androidCustomerCreate" />
         <item itemvalue="TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml" />
         <item itemvalue="TestNG.iOSCustomerCreate (3)" />
-        <item itemvalue="TestNG.iOSCustomerCreate" />
-        <item itemvalue="TestNG.iOSCustomerCreate (2)" />
-        <item itemvalue="TestNG.iOSCustomerCreate (1)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -208,6 +217,7 @@
       <workItem from="1729615667702" duration="2585000" />
       <workItem from="1729657911967" duration="13737000" />
       <workItem from="1729675642995" duration="3081000" />
+      <workItem from="1729746107117" duration="6501000" />
     </task>
     <task id="LOCAL-00001" summary="First commit - 1">
       <option name="closed" value="true" />
