@@ -1,10 +1,10 @@
 package Utils;
 
+import API.TokenFetcher;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
-import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,7 +16,7 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
 
-public class CommonUtils {
+public class CommonUtils extends TokenFetcher {
     public static Properties Prop;
     public static WebDriverWait wait;
     public static String iOSLocatorPropertiesFile = "./src/test/resources/iOSLocators.properties";

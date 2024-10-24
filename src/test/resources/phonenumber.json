@@ -290,16 +290,6 @@
     "phoneNumber": "2401234"
   },
   {
-    "name": "Bouvet Island",
-    "currency": "Norwegian Krone",
-    "currencyCode": "NOK",
-    "currencySymbol": "kr",
-    "countryCode": "BV",
-    "iso3": "BVT",
-    "dialingCode": "47",
-    "phoneNumber":"322234224"
-  },
-  {
     "name": "Brazil",
     "currency": "Brazilian real",
     "currencyCode": "BRL",
@@ -760,65 +750,6 @@
     "phoneNumber": "123456789"
   },
   {
-    "name": "French Guiana",
-    "currency": "Euro",
-    "currencyCode": "EUR",
-    "currencySymbol": "€",
-    "countryCode": "GF",
-    "iso3": "GUF",
-    "dialingCode": "594",
-    "phoneNumber": "694452310"
-  },
-  {
-    "name": "French Polynesia",
-    "currency": "CFP franc",
-    "currencyCode": "XPF",
-    "currencySymbol": "₣",
-    "countryCode": "PF",
-    "iso3": "PYF",
-    "dialingCode": "689",
-    "phoneNumber": "87709192"
-  },
-  {
-    "name": "French Southern Territories",
-    "currency": "Euro",
-    "currencyCode": "EUR",
-    "currencySymbol": "€",
-    "countryCode": "TF",
-    "iso3": "ATF",
-    "dialingCode": "262"
-  },
-  {
-    "name": "Gabon",
-    "currency": "Central African CFA franc",
-    "currencyCode": "XAF",
-    "currencySymbol": "FCFA",
-    "countryCode": "GA",
-    "iso3": "GAB",
-    "dialingCode": "241",
-    "phoneNumber": "62125800"
-  },
-  {
-    "name": "Gambia",
-    "currency": "Gambian dalasi",
-    "currencyCode": "GMD",
-    "currencySymbol": "D",
-    "countryCode": "GM",
-    "iso3": "GMB",
-    "dialingCode": "220",
-    "phoneNumber": "07816814"
-  },
-  {
-    "name": "Georgia",
-    "currency": "Georgian lari",
-    "currencyCode": "GEL",
-    "currencySymbol": "ლ",
-    "countryCode": "GE",
-    "iso3": "GEO",
-    "dialingCode": "995",
-    "phoneNumber": "328885033"
-  },
-  {
     "name": "Germany",
     "currency": "Euro",
     "currencyCode": "EUR",
@@ -957,15 +888,6 @@
     "iso3": "HTI",
     "dialingCode": "509",
     "phoneNumber": "22453300"
-  },
-  {
-    "name": "Heard Island and McDonald Islands",
-    "currency": "Australian dollar",
-    "currencyCode": "AUD",
-    "currencySymbol": "$",
-    "countryCode": "HM",
-    "iso3": "HMD",
-    "dialingCode": "672"
   },
   {
     "name": "Holy See (Vatican City State)",
@@ -1758,15 +1680,6 @@
     "phoneNumber": "232345678"
   },
   {
-    "name": "Pitcairn",
-    "currency": "New Zealand dollar",
-    "currencyCode": "NZD",
-    "currencySymbol": "$",
-    "countryCode": "PN",
-    "iso3": "PCN",
-    "dialingCode": "64"
-  },
-  {
     "name": "Poland",
     "currency": "Polish złoty",
     "currencyCode": "PLN",
@@ -2067,16 +1980,6 @@
     "phoneNumber": "101234567"
   },
   {
-    "name": "South Georgia and the South Sandwich Islands",
-    "currency": "Pound sterling",
-    "currencyCode": "GBP",
-    "currencySymbol": "£",
-    "countryCode": "GS",
-    "iso3": "SGS",
-    "dialingCode": "500",
-    "phoneNumber": "28200"
-  },
-  {
     "name": "South Sudan",
     "currency": "South Sudanese pound",
     "currencyCode": "SSP",
@@ -2355,16 +2258,6 @@
     "iso3": "USA",
     "dialingCode": "1",
     "phoneNumber": "2015550123"
-  },
-  {
-    "name": "United States Minor Outlying Islands",
-    "currency": "United States dollar",
-    "currencyCode": "USD",
-    "currencySymbol": "$",
-    "countryCode": "UM",
-    "iso3": "UMI",
-    "dialingCode": "1",
-    "phoneNumber": "8089544818"
   },
   {
     "name": "Uruguay",
