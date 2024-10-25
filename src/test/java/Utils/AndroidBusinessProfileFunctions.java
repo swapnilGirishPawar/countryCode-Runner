@@ -109,7 +109,7 @@ public class AndroidBusinessProfileFunctions extends Capabilities {
             UpdateCountryAPIRequest(contactId, PhoneNumber, countryName, locationId);
 
             // navigate back to customer tab.
-            navigateFromBusinessProfileToCustomerTab(driver);
+//            navigateFromBusinessProfileToCustomerTab(driver);
             // customer creation flow
             String FailedCountry = customer.customerFlow(countryName, PhoneNumber,dialingCode, driver);
 
@@ -118,7 +118,7 @@ public class AndroidBusinessProfileFunctions extends Capabilities {
             }
 
             // navigate back to business Profile
-            NavigateToCustomersTab(driver);
+//            NavigateToCustomersTab(driver);
 
             System.out.println("________________________________________________________________________________________");
 
