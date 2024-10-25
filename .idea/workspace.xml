@@ -4,18 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="badddd38-441b-45c1-b541-e1254f5601de" name="Changes" comment="" />
+    <list default="true" id="badddd38-441b-45c1-b541-e1254f5601de" name="Changes" comment="Commit 3[Customer Create]">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass/Capabilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseClass/Capabilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/iOSCustomerCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/iOSCustomerCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/BusinessProfileFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/BusinessProfileFunctions.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="SudhansuMerge2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sudhansudas007&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/swapnilGirishPawar/countryCode-Runner.git&quot;,
+    &quot;accountId&quot;: &quot;10aed9fe-d5a0-4379-a20f-bce6bc0ade59&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2nn99fs6osL7PaOwl8Lz16xWDBu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -27,9 +56,138 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml.executor": "Run",
+    "TestNG.AndroidBusinessProfile (1).executor": "Run",
+    "TestNG.AndroidBusinessProfile (2).executor": "Run",
+    "TestNG.AndroidBusinessProfile.executor": "Run",
+    "TestNG.iOSBusinessProfile.executor": "Run",
+    "TestNG.iOSBusinessProfile.testBusinessProfile.executor": "Run",
+    "TestNG.iOSCustomerCreate (1).executor": "Run",
+    "TestNG.iOSCustomerCreate (2).executor": "Run",
+    "TestNG.iOSCustomerCreate (3).executor": "Run",
+    "TestNG.iOSCustomerCreate (4).executor": "Run",
+    "TestNG.iOSCustomerCreate (5).executor": "Run",
+    "TestNG.iOSCustomerCreate.executor": "Run",
+    "TestNG.iOSCustomerCreate.testCustomerCreate.executor": "Run",
+    "git-widget-placeholder": "SudhansuMerge1",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="countryCode-Runner" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/iOS.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOSCustomerCreate (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="countryCode-Runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOSCustomerCreate (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="countryCode-Runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOSCustomerCreate (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="countryCode-Runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOSCustomerCreate" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="countryCode-Runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.iOSCustomerCreate" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml" />
+        <item itemvalue="TestNG.iOSCustomerCreate (3)" />
+        <item itemvalue="TestNG.iOSCustomerCreate" />
+        <item itemvalue="TestNG.iOSCustomerCreate (2)" />
+        <item itemvalue="TestNG.iOSCustomerCreate (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,7 +196,53 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729597824471</updated>
+      <workItem from="1729600887325" duration="562000" />
+      <workItem from="1729601464515" duration="210000" />
+      <workItem from="1729601710205" duration="76000" />
+      <workItem from="1729601807526" duration="1515000" />
+      <workItem from="1729603329389" duration="90000" />
+      <workItem from="1729603444613" duration="938000" />
+      <workItem from="1729604443218" duration="33000" />
+      <workItem from="1729604488716" duration="179000" />
+      <workItem from="1729604756152" duration="4409000" />
+      <workItem from="1729615667702" duration="2585000" />
+      <workItem from="1729657911967" duration="13737000" />
+      <workItem from="1729675642995" duration="3081000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit - 1">
+      <option name="closed" value="true" />
+      <created>1729604080840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729604080840</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Desired caps added for Android and IOS">
+      <option name="closed" value="true" />
+      <created>1729605760144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729605760144</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit 3[Customer Create]">
+      <option name="closed" value="true" />
+      <created>1729668409021</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729668409021</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit - 1" />
+    <MESSAGE value="Desired caps added for Android and IOS" />
+    <MESSAGE value="Commit 3[Customer Create]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 3[Customer Create]" />
   </component>
 </project>
