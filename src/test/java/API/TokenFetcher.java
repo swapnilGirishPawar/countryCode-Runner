@@ -17,6 +17,7 @@ public class TokenFetcher {
     private static final String CLIENT_SECRET = "ZE3Ao6ITX7v8mmzMYczPKjb1Q99cv2J5BMXfQvaq";
     private static final String USERNAME = "countrycode@maildrop.cc";
     private static final String PASSWORD = "setmore23";
+    public static String accountId = null;
 
     /**
      * Fetches token data and returns it as [access_token, user_id, acct_id].
@@ -25,7 +26,8 @@ public class TokenFetcher {
         Map<String, String> tokenData = getToken();
         String accessToken = tokenData.get("access_token");
         String userId = tokenData.get("user_id");
-        String accountId = tokenData.get("acct_id");
+        accountId = tokenData.get("acct_id");
+        System.out.println("Account ID: " + accountId);
 
         return new String[]{accessToken, userId, accountId};
     }
@@ -74,4 +76,5 @@ public class TokenFetcher {
         Gson gson = new Gson();
         return gson.fromJson(response, Map.class);
     }
+
 }

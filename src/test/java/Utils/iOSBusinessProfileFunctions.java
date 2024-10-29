@@ -3,6 +3,7 @@ package Utils;
 import API.APIHandler;
 import API.CountryService;
 import API.CountryUpdateService;
+import API.CustomerService;
 import BaseClass.Capabilities;
 import Tests.iOSCustomerCreate;
 import io.appium.java_client.AppiumDriver;
@@ -93,6 +94,8 @@ public class iOSBusinessProfileFunctions extends Capabilities {
         String locationId = contactInfo[0];
         String contactId = contactInfo[1];
         String PhoneNumber = null;
+        CustomerService customerService = new CustomerService();
+
         for (int i = 0; i < countries.length(); i++) {
             JSONObject countryObj = countries.getJSONObject(i);
             String countryName = countryObj.getString("name");
@@ -112,6 +115,12 @@ public class iOSBusinessProfileFunctions extends Capabilities {
 
             // customer creation flow
             String FailedCountry = obj.customerFlow(countryName, PhoneNumber, dialingCode, driver);
+
+            String customerId = customerService.fetchAndCheckCustomer(accountId, countryName, PhoneNumber, dialingCode);
+            System.out.println("Customer ID for delete: " + customerId);
+            System.out.println("account ID for delete: " + accountId);
+
+            customerService.deleteCustomer(customerId, accountId);
 
             if (FailedCountry != null) {
                 failedCountries.add(FailedCountry);

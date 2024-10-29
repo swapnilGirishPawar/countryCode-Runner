@@ -1,5 +1,6 @@
 package Tests;
 
+import API.CustomerService;
 import BaseClass.Capabilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
@@ -31,7 +32,6 @@ public class iOSCustomerCreate extends Capabilities {
     String discardNleave;
     String clearSearchedQuery;
     String cancelSearch;
-
 
 
     public void setup() throws Throwable {
@@ -67,29 +67,30 @@ public class iOSCustomerCreate extends Capabilities {
         beforeTest();
         String FailedCountry = createCustomer(countryName, phoneNumber);
         if(FailedCountry == null){
-            openCustomerOverview(countryName);
-            validatePhoneNumber(driver, dialingCode, phoneNumber);
+//            openCustomerOverview(countryName);
+//            validatePhoneNumber(driver, dialingCode, phoneNumber, countryName);
         }
         return FailedCountry;
 
     }
 
     public String createCustomer(String countryName, String mobileNumber) throws Exception {
-        clickElementByXPath(customerTab);
+//        clickElementByXPath(customerTab);
         clickElementByXPath(addNewCustomer);
         clickElementByXPath(addCustomerManually);
         sendKeysByXpath(customerName, countryName);
         sendKeysByXpath(phoneNumber, mobileNumber);
         clickElementByXPath(saveButton);
-        Thread.sleep(2000);
-
-        if (isDisplayed(saveButton)) {
-            System.out.println("\uD83D\uDEA8 \uD83D\uDEA8 \uD83D\uDEA8Customer created Failed!!");
-            exitCustomerCreate();
-            return countryName;
-        } else {
+        try {
+            wait(By.xpath(backBtn), driver, 20);
+            clickElementByXPath(backBtn);
             System.out.println("✅ ✅ ✅Customer created Successfully!!");
-            gobackToCalendar();
+        } catch (Exception e) {
+            if(isDisplayed(saveButton)){
+                System.out.println("❌ ❌ ❌Customer created Failed!!");
+                exitCustomerCreate();
+                return countryName;
+            }
         }
         return null;
     }
@@ -109,16 +110,16 @@ public class iOSCustomerCreate extends Capabilities {
 
     public void gobackToCalendar() throws Exception {
         clickElementByXPath(backBtn);
-        clickElementByXPath(calendarBtn);
+//        clickElementByXPath(calendarBtn);
     }
 
-    public void validatePhoneNumber(AppiumDriver driver, String dialingCode, String phoneNumber) throws Throwable {
+    public void validatePhoneNumber(AppiumDriver driver, String dialingCode, String phoneNumber, String customerName) throws Throwable {
         String FullNumber = "+" +dialingCode + phoneNumber;
         String phoneNumberOverView = getTextOfElement(driver, "General.phoneNumberOverview").replaceAll("[\\s-]", "");
         if(phoneNumberOverView.equalsIgnoreCase(FullNumber)){
             System.out.println("Phone number is correct");
+            tapOnElement2("accessibilityid$anywhere_back", "your brand back button", driver);
             // delete customer
-            delete(driver);
             clearTheSearchedQuery();
         } else {
             System.out.println("Phone number is incorrect");
@@ -130,6 +131,10 @@ public class iOSCustomerCreate extends Capabilities {
 
         }
     }
+    public void deleteCustomerUsingCustomerName(String customerName, String phoneNumber, String customerId) throws Throwable {
+        CustomerService customerService = new CustomerService();
+        customerService.deleteCustomer(customerId, accountId);
+    };
     public void delete(AppiumDriver driver) throws Throwable {
         tapOnElementiOS("Booking.threeDotsEventButton", "Three dots in the overview page", driver);
         tapOnElementiOS("Booking.deleteEventButton", "Delete button", driver);
