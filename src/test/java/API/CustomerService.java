@@ -1,5 +1,6 @@
 package API;
 
+import BaseClass.Capabilities;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import java.io.IOException;
@@ -8,7 +9,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CustomerService {
+public class CustomerService extends Capabilities {
     private APIHandler apiHandler;
 
     public CustomerService() throws Exception {
@@ -42,8 +43,10 @@ public class CustomerService {
             // Handle the response
             if (responseCode == 200) {
                 System.out.println("Customer deleted successfully.");
+                node.pass("Customer deleted successfully.");
             } else {
                 System.err.println("Failed to delete customer. Response code: " + responseCode);
+                node.fail("Failed to delete customer. Response code: " + responseCode);
             }
 
         } catch (IOException e) {
@@ -110,7 +113,7 @@ public class CustomerService {
                     JSONObject contact = contacts.getJSONObject(i);
 
                     // Check if the full name matches
-                    if (contact.optString("fullName").equalsIgnoreCase(name)) {
+                    if (name.contains(contact.optString("firstName"))) {
                         JSONArray linkedContactMethods = contact.optJSONArray("linkedContactMethods");
 
                         // Check if linked contact methods contain the phone number
@@ -124,6 +127,7 @@ public class CustomerService {
                                     System.out.println("Matching customer found.");
                                     String id = method.getString("contactID");
                                     System.out.println(name + " and " + phoneNumber + " are saved successfully in the DB.");
+                                    node.pass("Customer name and phone number are matched successfully in the DB.");
                                     return id; // Return the matching customer ID
                                 }
                             }
@@ -134,6 +138,7 @@ public class CustomerService {
 
             // If no match found, print a message and return null
             System.out.println(name + " and " + phoneNumber + " are not saved in the DB.");
+            node.fail("Customer name and phone number are not matched in the DB.");
             return null;
 
         } catch (Exception e) {

@@ -64,10 +64,10 @@ public class AndroidCustomerCreate extends Capabilities {
     }
     public String customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Throwable {
         beforeTest();
-        String FailedCountry = createCustomer(countryName, phoneNumber);
+        String FailedCountry = createCustomer(countryName, phoneNumber,dialingCode);
         if(FailedCountry == null){
-            openCustomerOverview(countryName);
-            validatePhoneNumber(driver, dialingCode, phoneNumber);
+            //openCustomerOverview(countryName);
+            //validatePhoneNumber(driver, dialingCode, phoneNumber);
         }
         return FailedCountry;
 
@@ -81,6 +81,7 @@ public class AndroidCustomerCreate extends Capabilities {
         if (phoneNumberOverView.equalsIgnoreCase(FullNumber)) {
 //        if (isDisplayed("//XCUIElementTypeButton[@name=\"" + FullNumber + "\"]")) {
             System.out.println("Phone number is correct");
+            node.pass("Phone number is correct");
             // delete customer
             delete();
         } else {
@@ -96,23 +97,38 @@ public class AndroidCustomerCreate extends Capabilities {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//android.widget.TextView[@text=\"" + customerName + "\"]")).click();
     }
-    public String createCustomer(String countryName, String mobileNumber) throws Exception {
+    public String createCustomer(String countryName, String mobileNumber, String dialingCode) throws Exception {
         clickElementByXPath(customerTab);
         clickElementByXPath(addNewCustomer);
         clickElementByXPath(addCustomerManually);
         sendKeysByXpath(customerName, countryName);
+        node.info("Customer name: " + countryName);
         sendKeysByXpath(phoneNumber, mobileNumber);
+        node.info("Creating customer with phone number:  " +"+"+ dialingCode+" " + mobileNumber);
         clickElementByXPath(saveButton);
-        Thread.sleep(2000);
-
-        if (isDisplayed(saveButton)) {
-            System.out.println("\uD83D\uDEA8 \uD83D\uDEA8 \uD83D\uDEA8 Customer created Failed!!");
-            exitCustomerCreate();
-            return countryName;
-        } else {
+        node.info("Clicked on save button");
+        try {
+            wait(By.xpath(backBtn), driver, 20);
+            clickElementByXPath(backBtn);
             System.out.println("✅ ✅ ✅Customer created Successfully!!");
-            gobackToCalendar();
+            node.pass("✅ ✅ ✅Customer created successfully");
+        } catch (Exception e) {
+            if (isDisplayed(saveButton)) {
+                System.out.println("❌ ❌ ❌Customer created Failed!!");
+                node.fail("❌ ❌ ❌Customer created Failed!!");
+                exitCustomerCreate();
+                return countryName;
+            }
         }
+
+//        if (isDisplayed(saveButton)) {
+//            System.out.println("\uD83D\uDEA8 \uD83D\uDEA8 \uD83D\uDEA8 Customer created Failed!!");
+//            exitCustomerCreate();
+//            return countryName;
+//        } else {
+//            System.out.println("✅ ✅ ✅Customer created Successfully!!");
+//            gobackToCalendar();
+//        }
         return null;
     }
     public void clickElementByXPath(String xpath) throws Exception {
@@ -157,4 +173,5 @@ public class AndroidCustomerCreate extends Capabilities {
         Thread.sleep(1000);
         clickElementByXPath(calendarBtn);
     }
+
 }

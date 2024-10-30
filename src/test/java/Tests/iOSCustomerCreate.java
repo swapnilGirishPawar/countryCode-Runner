@@ -65,7 +65,7 @@ public class iOSCustomerCreate extends Capabilities {
 
     public String customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Throwable {
         beforeTest();
-        String FailedCountry = createCustomer(countryName, phoneNumber);
+        String FailedCountry = createCustomer(countryName, phoneNumber, dialingCode);
         if(FailedCountry == null){
 //            openCustomerOverview(countryName);
 //            validatePhoneNumber(driver, dialingCode, phoneNumber, countryName);
@@ -74,20 +74,25 @@ public class iOSCustomerCreate extends Capabilities {
 
     }
 
-    public String createCustomer(String countryName, String mobileNumber) throws Exception {
+    public String createCustomer(String countryName, String mobileNumber, String dialingCode) throws Exception {
 //        clickElementByXPath(customerTab);
         clickElementByXPath(addNewCustomer);
         clickElementByXPath(addCustomerManually);
         sendKeysByXpath(customerName, countryName);
+        node.info("Customer Name: " + countryName);
         sendKeysByXpath(phoneNumber, mobileNumber);
+        node.info("Creating customer with phone number:  " +"+"+ dialingCode+" " + mobileNumber);
         clickElementByXPath(saveButton);
+        node.info("Clicked on save button");
         try {
             wait(By.xpath(backBtn), driver, 20);
             clickElementByXPath(backBtn);
             System.out.println("✅ ✅ ✅Customer created Successfully!!");
+            node.pass("✅ ✅ ✅Customer created Successfully!!");
         } catch (Exception e) {
             if(isDisplayed(saveButton)){
                 System.out.println("❌ ❌ ❌Customer created Failed!!");
+                node.fail("❌ ❌ ❌Customer created Failed!!");
                 exitCustomerCreate();
                 return countryName;
             }

@@ -15,8 +15,8 @@ public class TokenFetcher {
     private static final String TOKEN_URL = "https://fullcreative.fullauth.com/o/oauth2/v1/token";
     private static final String CLIENT_ID = "7f001-a4656cce501ee97bdc09";
     private static final String CLIENT_SECRET = "ZE3Ao6ITX7v8mmzMYczPKjb1Q99cv2J5BMXfQvaq";
-    private static final String USERNAME = "countrycode@maildrop.cc";
-    private static final String PASSWORD = "setmore23";
+    private static final String USERNAME = "sudhansu4545@setmore.com";
+    private static final String PASSWORD = "demo@1234";
     public static String accountId = null;
 
     /**
@@ -27,7 +27,6 @@ public class TokenFetcher {
         String accessToken = tokenData.get("access_token");
         String userId = tokenData.get("user_id");
         accountId = tokenData.get("acct_id");
-        System.out.println("Account ID: " + accountId);
 
         return new String[]{accessToken, userId, accountId};
     }

@@ -3,6 +3,7 @@ package Utils;
 import API.APIHandler;
 import API.CountryService;
 import API.CountryUpdateService;
+import API.CustomerService;
 import BaseClass.Capabilities;
 import Tests.AndroidCustomerCreate;
 import Tests.iOSCustomerCreate;
@@ -15,6 +16,8 @@ import org.json.JSONObject;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+
+import static Tests.AndroidBusinessProfile.test;
 
 public class AndroidBusinessProfileFunctions extends Capabilities {
     public static String selectedCountry;
@@ -92,10 +95,12 @@ public class AndroidBusinessProfileFunctions extends Capabilities {
         String locationId = contactInfo[0];
         String contactId = contactInfo[1];
         String PhoneNumber = null;
+        CustomerService customerService = new CustomerService();
         for (int i = 0; i < countries.length(); i++) {
             JSONObject countryObj = countries.getJSONObject(i);
             String countryName = countryObj.getString("name");
             String dialingCode = countryObj.getString("dialingCode");
+            node= test.createNode("Country: "+countryName);
             try {
                 PhoneNumber = countryObj.getString("phoneNumber");
 
@@ -112,13 +117,17 @@ public class AndroidBusinessProfileFunctions extends Capabilities {
 //            navigateFromBusinessProfileToCustomerTab(driver);
             // customer creation flow
             String FailedCountry = customer.customerFlow(countryName, PhoneNumber,dialingCode, driver);
+            String customerId = customerService.fetchAndCheckCustomer(accountId, countryName, PhoneNumber, dialingCode);
+            System.out.println("Customer ID for delete: " + customerId);
+            System.out.println("account ID for delete: " + accountId);
+            customerService.deleteCustomer(customerId, accountId);
 
             if(FailedCountry!=null){
                 failedCountries.add(FailedCountry);
             }
 
             // navigate back to business Profile
-//            NavigateToCustomersTab(driver);
+            //NavigateToCustomersTab(driver);
 
             System.out.println("________________________________________________________________________________________");
 
