@@ -15,8 +15,9 @@ public class TokenFetcher {
     private static final String TOKEN_URL = "https://fullcreative.fullauth.com/o/oauth2/v1/token";
     private static final String CLIENT_ID = "7f001-a4656cce501ee97bdc09";
     private static final String CLIENT_SECRET = "ZE3Ao6ITX7v8mmzMYczPKjb1Q99cv2J5BMXfQvaq";
-    private static final String USERNAME = "countrycode@maildrop.cc";
-    private static final String PASSWORD = "setmore23";
+    private static final String USERNAME = "sudhansu4545@setmore.com";
+    private static final String PASSWORD = "demo@1234";
+    public static String accountId = null;
 
     /**
      * Fetches token data and returns it as [access_token, user_id, acct_id].
@@ -25,7 +26,7 @@ public class TokenFetcher {
         Map<String, String> tokenData = getToken();
         String accessToken = tokenData.get("access_token");
         String userId = tokenData.get("user_id");
-        String accountId = tokenData.get("acct_id");
+        accountId = tokenData.get("acct_id");
 
         return new String[]{accessToken, userId, accountId};
     }
@@ -74,4 +75,5 @@ public class TokenFetcher {
         Gson gson = new Gson();
         return gson.fromJson(response, Map.class);
     }
+
 }

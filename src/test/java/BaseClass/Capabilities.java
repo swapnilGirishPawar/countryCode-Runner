@@ -1,6 +1,9 @@
 package BaseClass;
 
 import Utils.CommonUtils;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.Setting;
 import io.appium.java_client.android.AndroidDriver;
@@ -10,6 +13,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
 public class Capabilities extends CommonUtils {
+    public static ExtentSparkReporter spark;
+    public static ExtentTest test;
+    public static ExtentTest node;
+    public static String reportFolderPath = "reports";
+    public static ExtentReports extent = new ExtentReports();
+
     public static AppiumDriver driver=null;
 
     public AppiumDriver launchDriver(String platform) throws Throwable {
@@ -44,8 +53,8 @@ public class Capabilities extends CommonUtils {
             capabilities.setCapability("appium:appPackage", "com.adaptavant.setmore");
             capabilities.setCapability("appium:appActivity", "com.anywhere.container.presentation.ui.MainActivity");
         } else if ("iOS".equalsIgnoreCase(platform)) {
-            capabilities.setCapability("deviceName", "iPhone 16 Pro Max");
-            capabilities.setCapability("platformVersion", "18.0");
+            capabilities.setCapability("deviceName", "Sudhansu phone");
+            capabilities.setCapability("platformVersion", "17.5");
             capabilities.setCapability("appium:automationName", "XCUITest");
             capabilities.setCapability("appium:platformName", "iOS");
             capabilities.setCapability("appium:bundleId", "com.setmore.app");

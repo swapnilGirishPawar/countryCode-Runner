@@ -1,13 +1,13 @@
 [
   {
-    "name": "Poland",
-    "currency": "Polish złoty",
-    "currencyCode": "PLN",
-    "currencySymbol": "zł",
-    "countryCode": "PL",
-    "iso3": "POL",
-    "dialingCode": "48",
-    "phoneNumber": "123456789"
+    "name": "Romania",
+    "currency": "Romanian leu",
+    "currencyCode": "RON",
+    "currencySymbol": "lei",
+    "countryCode": "RO",
+    "iso3": "ROU",
+    "dialingCode": "40",
+    "phoneNumber": "211234567"
   },
   {
     "name": "Portugal",
