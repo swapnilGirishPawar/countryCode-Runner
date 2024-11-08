@@ -55,6 +55,7 @@ public class CountryServiceManager {
         JSONArray linkedContactMethods = jsonResponse.getJSONObject("company").getJSONArray("linkedContactMethods");
         String contactId = linkedContactMethods.getJSONObject(0).getString("contactID");
 
+
         // Return both values as a String array
         return new String[]{locationId, contactId};
     }
