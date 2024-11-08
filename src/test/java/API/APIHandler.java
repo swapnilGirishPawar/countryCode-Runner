@@ -14,25 +14,16 @@ public class APIHandler {
 
         private String accessToken;
 
-        /**
-         * Constructor that initializes the access token by fetching it using TokenFetcher.
-         */
+        //Constructor that initializes the access token by fetching it using TokenFetcher.
         public APIHandler() throws Exception {
-            // Assume TokenFetcher fetches the access token
             TokenFetcher tokenFetcher = new TokenFetcher();
-            String[] tokenData = tokenFetcher.getData(); // Retrieve the token data
-            this.accessToken = tokenData[0]; // Store the access token
+            String[] tokenData = tokenFetcher.getData();
+            this.accessToken = tokenData[0];
         }
 
-        /**
-         * Returns the access token.
-         *
-         * @return The access token.
-         */
         public String getAccessToken() {
             return accessToken;
         }
-
         /**
          * Reusable API request method with optional token refresh logic.
          *

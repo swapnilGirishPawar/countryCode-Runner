@@ -143,8 +143,8 @@ public class CommonUtils extends TokenFetcher {
 
     public static By wait(By element, AppiumDriver driver, int sec) {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(sec));
-            wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+            wait = new WebDriverWait(driver, Duration.ofSeconds(sec));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(element)).click();
             return element;
         } catch (Exception e) {
             System.out.println("element is not there");

@@ -33,9 +33,9 @@ public class CustomerService extends Capabilities {
             headers.put("account-id", accountId);
             headers.put("Content-Type", "application/json");
 
-            System.out.println("Attempting to delete customer...");
-            System.out.println("URL: " + urlString);
-            System.out.println("Headers: " + headers);
+//            System.out.println("Attempting to delete customer...");
+//            System.out.println("URL: " + urlString);
+//            System.out.println("Headers: " + headers);
 
             // Make the DELETE request
             int responseCode = makeDeleteRequest(urlString, headers);
@@ -74,7 +74,7 @@ public class CustomerService extends Capabilities {
 
         // Send the request and return the response code
         int responseCode = connection.getResponseCode();
-        System.out.println("Response Message: " + connection.getResponseMessage());
+       // System.out.println("Response Message: " + connection.getResponseMessage());
         connection.disconnect(); // Close the connection
         return responseCode;
     }
@@ -102,7 +102,7 @@ public class CustomerService extends Capabilities {
 
             // Parse the JSON response
             JSONObject responseJson = new JSONObject(customerListResponse);
-            System.out.println("Response of fetch response: " + responseJson);
+           // System.out.println("Response of fetch response: " + responseJson);
 
             // Check if the response contains contacts
             if (responseJson.getBoolean("success") && responseJson.has("contact")) {
@@ -124,7 +124,7 @@ public class CustomerService extends Capabilities {
                                 // Check if the phone number matches
                                 String formattedPhone = "+" + dialingCode + phoneNumber;
                                 if (method.optString("value").equals(formattedPhone)) {
-                                    System.out.println("Matching customer found.");
+                                    //System.out.println("Matching customer found.");
                                     String id = method.getString("contactID");
                                     System.out.println(name + " and " + phoneNumber + " are saved successfully in the DB.");
                                     node.pass("Customer name and phone number are matched successfully in the DB.");

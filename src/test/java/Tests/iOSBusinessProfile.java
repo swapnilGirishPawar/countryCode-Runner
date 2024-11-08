@@ -21,10 +21,6 @@ public class iOSBusinessProfile extends iOSBusinessProfileFunctions {
         test = extent.createTest("Check_Country_Code");
     }
 
-    @Test
-    public void Login(){
-        System.out.println("Logged in successfully");
-    }
 
     @Test
     public void testBusinessProfile() throws Throwable {

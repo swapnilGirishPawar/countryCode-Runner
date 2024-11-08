@@ -1,7 +1,8 @@
 package Tests;
 
-import API.CustomerService;
+import  API.CustomerService;
 import BaseClass.Capabilities;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
@@ -63,41 +64,49 @@ public class iOSCustomerCreate extends Capabilities {
     }
 
 
-    public String customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Throwable {
-        beforeTest();
-        String FailedCountry = createCustomer(countryName, phoneNumber, dialingCode);
-        if(FailedCountry == null){
-//            openCustomerOverview(countryName);
-//            validatePhoneNumber(driver, dialingCode, phoneNumber, countryName);
-        }
-        return FailedCountry;
+    public void customerFlow(String countryName, String phoneNumber, String dialingCode, AppiumDriver driver) throws Throwable {
+       // beforeTest();
+        //String FailedCountry = createCustomer(countryName, phoneNumber, dialingCode);
+        createCustomer(countryName, phoneNumber, dialingCode);
+//        if(FailedCountry == null){
+////            openCustomerOverview(countryName);
+////            validatePhoneNumber(driver, dialingCode, phoneNumber, countryName);
+//        }
+//        return FailedCountry;
 
     }
 
-    public String createCustomer(String countryName, String mobileNumber, String dialingCode) throws Exception {
+    public void createCustomer(String countryName, String mobileNumber, String dialingCode) throws Exception {
 //        clickElementByXPath(customerTab);
-        clickElementByXPath(addNewCustomer);
-        clickElementByXPath(addCustomerManually);
-        sendKeysByXpath(customerName, countryName);
+       // clickElementByXPath(addNewCustomer);
+        driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`name == \"Add new customer\"`][1]")).click();
+        driver.findElement(AppiumBy.iOSNsPredicateString("name == \"Add manually\" AND label == \"Add manually\" AND type == \"XCUIElementTypeButton\"")).click();
+       // clickElementByXPath(addCustomerManually);
+        //sendKeysByXpath(customerName, countryName);
         node.info("Customer Name: " + countryName);
-        sendKeysByXpath(phoneNumber, mobileNumber);
+driver.findElement(AppiumBy.iOSNsPredicateString("value == \"Full name\"")).sendKeys(countryName);
+driver.findElement(AppiumBy.iOSNsPredicateString("value == \"Phone number\"")).sendKeys(mobileNumber);
+       // sendKeysByXpath(phoneNumber, mobileNumber);
         node.info("Creating customer with phone number:  " +"+"+ dialingCode+" " + mobileNumber);
-        clickElementByXPath(saveButton);
+        //clickElementByXPath(saveButton);
+driver.findElement(AppiumBy.iOSNsPredicateString("name == \"Save\" AND label == \"Save\" AND type == \"XCUIElementTypeButton\"")).click();
         node.info("Clicked on save button");
         try {
-            wait(By.xpath(backBtn), driver, 20);
-            clickElementByXPath(backBtn);
-            System.out.println("✅ ✅ ✅Customer created Successfully!!");
+            wait(AppiumBy.iOSNsPredicateString("name == \"anywhere_back\""),driver,10);
+            //driver.findElement(AppiumBy.iOSNsPredicateString("name == \"anywhere_back\"")).click();
+           // wait(By.xpath(backBtn), driver, 20);
+            //clickElementByXPath(backBtn);
+            System.out.println("✅ ✅ ✅ "+countryName+" created Successfully!!");
             node.pass("✅ ✅ ✅Customer created Successfully!!");
         } catch (Exception e) {
             if(isDisplayed(saveButton)){
                 System.out.println("❌ ❌ ❌Customer created Failed!!");
                 node.fail("❌ ❌ ❌Customer created Failed!!");
                 exitCustomerCreate();
-                return countryName;
+               // return countryName;
             }
         }
-        return null;
+       // return null;
     }
 
     public void openCustomerOverview(String customerName) throws Exception {

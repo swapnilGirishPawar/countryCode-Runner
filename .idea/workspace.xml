@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="badddd38-441b-45c1-b541-e1254f5601de" name="Changes" comment="Final change ready to merge">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API/APIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/APIHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API/CountryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/CountryServiceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API/CountryUpdateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/CountryUpdateService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/API/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/API/TokenFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/TokenFetcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass/Capabilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseClass/Capabilities.java" afterDir="false" />
@@ -15,7 +19,8 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AndroidCustomerCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AndroidCustomerCreate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/iOSBusinessProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/iOSBusinessProfile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/iOSCustomerCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/iOSCustomerCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/AndroidBusinessProfileFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/AndroidBusinessProfileFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/AndroidBusinessProfileFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/CommonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utils/iOSBusinessProfileFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/iOSBusinessProfileFunctions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +52,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/swapnilGirishPawar/countryCode-Runner.git&quot;,
-    &quot;accountId&quot;: &quot;10aed9fe-d5a0-4379-a20f-bce6bc0ade59&quot;
+    &quot;accountId&quot;: &quot;eea99f3d-de02-41b6-b5e6-e7896738918e&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -64,6 +69,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/Android.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.AndroidBusinessProfile (1).executor&quot;: &quot;Run&quot;,
@@ -78,7 +84,7 @@
     &quot;TestNG.iOSCustomerCreate (5).executor&quot;: &quot;Run&quot;,
     &quot;TestNG.iOSCustomerCreate.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.iOSCustomerCreate.testCustomerCreate.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Android__Runner&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -93,17 +99,6 @@
   }
 }</component>
   <component name="RunManager" selected="TestNG./Users/sudhansu/IdeaProjects/countryCode-Runner/iOS.xml">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="/Users/sudhansu/IdeaProjects/countryCode-Runner/Android.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="countryCode-Runner" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Android.xml" />
@@ -184,14 +179,6 @@
         <item itemvalue="TestNG.iOSCustomerCreate (2)" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
