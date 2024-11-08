@@ -12,11 +12,11 @@ import com.google.gson.Gson;
 
 public class TokenFetcher {
 
-    private static final String TOKEN_URL = "https://fullcreative.fullauth.com/o/oauth2/v1/token";
-    private static final String CLIENT_ID = "7f001-a4656cce501ee97bdc09";
-    private static final String CLIENT_SECRET = "ZE3Ao6ITX7v8mmzMYczPKjb1Q99cv2J5BMXfQvaq";
-    private static final String USERNAME = "manipal@test.co";
-    private static final String PASSWORD = "setmore24";
+    private static final String TOKEN_URL = "xxxxxxx";
+    private static final String CLIENT_ID = "7xxxxx";
+    private static final String CLIENT_SECRET = "xxxx";
+    private static final String USERNAME = "mxx";
+    private static final String PASSWORD = "sxxx";
     public static String accountId = null;
 
     /**
